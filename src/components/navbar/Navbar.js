@@ -7,13 +7,16 @@ import { useState } from "react";
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [hoveredItems, setHoveredItems] = useState(Array(5).fill(false));
+  const [isDisplayed, setDisplay] = useState(false);
 
   const handleMouseEnter = (index) => {
     setHoveredItems((prev) => prev.map((_, i) => (i === index ? true : false)));
+    setDisplay(true);
   };
 
   const handleMouseLeave = () => {
     setHoveredItems(Array(5).fill(false));
+    setDisplay(false);
   };
 
   return (
@@ -146,6 +149,102 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
+      <section className="flex flex-col bg-black" style={{ height: "65vh" }}>
+        <div className=" flex text-left">
+          <div className="w-1/2">
+            <div className=" grid lg:grid-cols-2  gap-y-3 p-20 text-xl">
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">View All</a>
+              </div>
+              <div
+                className="text-blue-500 font-bold"
+                style={{
+                  cursor: "pointer",
+                  transition: "transform 0.3s",
+                }}
+                href="/barbells"
+                onMouseEnter={() => {
+                  document.getElementById("newArrivals").style.transform = "translateX(5px)";
+                }}
+                onMouseLeave={() => {
+                  document.getElementById("newArrivals").style.transform = "translateX(0px)";
+                }}
+                id="newArrivals">
+                {"-> New Arrivals"}
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Barbells</a>
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Weight Plates</a>
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Lifting Sets</a>
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Platform</a>
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Barbell Collars</a>
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Weight Benches</a>
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Dumbbells</a>
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Racks & Rigs</a>
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Kettlebells</a>
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Storage</a>
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Outdoor</a>
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Gym Flooring</a>
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Training Tools</a>
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Competition Accessories</a>
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Strength Machines</a>
+              </div>
+              <div className=" flex items-center" href="/barbells">
+                <a className="border-white border-b-2 text-white font-bold no-underline">Gear</a>
+              </div>
+              <div
+                className="text-blue-500 font-bold"
+                style={{
+                  cursor: "pointer",
+                  transition: "transform 0.3s",
+                }}
+                href="/barbells"
+                onMouseEnter={() => {
+                  document.getElementById("specialOffers").style.transform = "translateX(5px)";
+                }}
+                onMouseLeave={() => {
+                  document.getElementById("specialOffers").style.transform = "translateX(0px)";
+                }}
+                id="specialOffers">
+                {"-> Special Offers"}
+              </div>
+            </div>
+          </div>
+          <div className="w-1/2">
+            <img
+              src="https://imgs.search.brave.com/2aGyvAoIC5fR7OhMrxZiaxPMpyO5r4qxKmk2LImtQ7c/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA2LzUxLzQ5Lzkx/LzM2MF9GXzY1MTQ5/OTEyOF8wMnV6cHlR/Y0JJMXlwakY5ek5h/VnhnV3ZmNkpqNERJ/VS5qcGc"
+              className=" w-full"></img>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
