@@ -21,7 +21,10 @@ export default function HeaderSection() {
                   </h1>
                   <div className="flex">
                     <button className=" bg-slate-50 text-white" style={{ borderRadius: "10px" }}>
+<<<<<<< Updated upstream
                       {" "}
+=======
+>>>>>>> Stashed changes
                       Contact Sale
                     </button>
                     <button style={{ border: "2px solid white", borderRadius: "10px" }}> Explore Eleiko Cable</button>
