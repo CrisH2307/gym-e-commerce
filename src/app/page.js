@@ -1,4 +1,4 @@
-import NewProduct from "@/components/NewProducts";
+import NewProduct from "@/components/products/NewProducts";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import HeaderSection from "@/components/headerSection/HeaderSection";

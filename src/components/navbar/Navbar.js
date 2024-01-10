@@ -149,10 +149,12 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <section className="flex flex-col bg-black" style={{ height: "65vh" }}>
+
+      {/* Hover Section */}
+      <section className="flex flex-col bg-black mb-4" style={{ height: "65vh" }}>
         <div className=" flex text-left">
           <div className="w-1/2">
-            <div className=" grid lg:grid-cols-2  gap-y-3 p-20 text-xl">
+            <div className=" grid lg:grid-cols-2  gap-y-3 pl-20 pt-12 text-xl">
               <div className=" flex items-center" href="/barbells">
                 <a className="border-white border-b-2 text-white font-bold no-underline">View All</a>
               </div>
@@ -236,6 +238,19 @@ export default function Navbar() {
                 id="specialOffers">
                 {"-> Special Offers"}
               </div>
+            </div>
+            <div className="flex pt-20">
+              <img
+                src="https://www.oceaniaweightlifting.com/portals/0/logos/iwf-white.png"
+                className="size-12 ml-16"></img>
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/7/76/International_Powerlifting_Federation_logo.png"
+                className="size-16 h-full pt-2"></img>
+
+              <img
+                src="https://sbdbelgium.be/wp-content/uploads/2020/07/sbd-apparel-belgium-logo-new-300-3.png"
+                className="size-16 h-full pl-4 pt-3"></img>
             </div>
           </div>
           <div className="w-1/2">
