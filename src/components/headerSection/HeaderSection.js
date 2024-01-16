@@ -21,7 +21,8 @@ export default function HeaderSection() {
               <div className="relative flex-1 overflow-hidden">
                 <img
                   src="https://png.pngtree.com/background/20230614/original/pngtree-people-exercising-inside-of-a-gym-picture-image_3488212.jpg"
-                  className="h-full w-full"></img>
+                  className="h-full w-full"
+                ></img>
                 <div className="absolute inset-0 bg-black opacity-30"></div>
               </div>
             </div>
@@ -33,7 +34,9 @@ export default function HeaderSection() {
             <div className="w-full relative px-6 pt-28 pb-10 md:pt-28 md:pb-14 md:px-14 lg:pt-30 lg:pb-20 lg:px-20 flex flex-col gap-y-7 md:gap-y-10">
               <div class="flex flex-col gap-y-4 md:gap-y-5">
                 <div class="flex flex-col gap-y-2">
-                  <p class="font-medium text-h-sm md:text-h-base text-white">Introducing</p>
+                  <p class="font-medium text-h-sm md:text-h-base text-white">
+                    Introducing
+                  </p>
                   <h1 class="font-bold text-h-3xl md:text-h-5xl lg:text-h-4xl xl:text-h-4xl 2xl:text-h-5xl max-w-md md:max-w-lg xl:max-w-xl 2xl:max-w-2xl text-white">
                     Eleiko Cables
                   </h1>
@@ -42,13 +45,19 @@ export default function HeaderSection() {
               <div class="flex flex-wrap gap-4 items-center w-full sm:w-auto">
                 <a
                   class="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle min-w-[160px] w-full sm:w-auto px-8 text-[15px] border-transparent hover:opacity-75 bg-white text-primary"
-                  href="/en-ca/contact-sales">
-                  <span class="inline-flex gap-x-2 items-center leading-[48px] mt-[-2px]">Contact Sales</span>
+                  href="/en-ca/contact-sales"
+                >
+                  <span class="inline-flex gap-x-2 items-center leading-[48px] mt-[-2px]">
+                    Contact Sales
+                  </span>
                 </a>
                 <a
                   class="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle min-w-[160px] w-full sm:w-auto px-8 text-[15px] bg-transparent hover:opacity-75 border-white text-white"
-                  href="/en-ca/cables">
-                  <span class="inline-flex gap-x-2 items-center leading-[48px] mt-[-2px]">Explore Eleiko Cables</span>
+                  href="/en-ca/cables"
+                >
+                  <span class="inline-flex gap-x-2 items-center leading-[48px] mt-[-2px]">
+                    Explore Eleiko Cables
+                  </span>
                 </a>
               </div>
             </div>
@@ -61,7 +70,8 @@ export default function HeaderSection() {
             <div class="relative flex-1 overflow-hidden">
               <img
                 src="https://png.pngtree.com/background/20230614/original/pngtree-people-exercising-inside-of-a-gym-picture-image_3488212.jpg"
-                className="h-full"></img>
+                className="h-full"
+              ></img>
               <div class="absolute inset-0 bg-primary-dark md:bg-transparent md:bg-gradient-to-t md:from-primary-dark md:via-transparent opacity-60"></div>
             </div>
           </div>
@@ -78,14 +88,18 @@ export default function HeaderSection() {
                 </h2>
               </div>
               <p class="max-w-md font-medium leading-normal text-base md:text-lg 2xl:text-xl 2xl:leading-normal text-white">
-                Access the ultimate lifting experience at home with equipment crafted for a lifetime.{" "}
+                Access the ultimate lifting experience at home with equipment
+                crafted for a lifetime.{" "}
               </p>
             </div>
             <div class="flex flex-wrap gap-4 items-center w-full sm:w-auto">
               <a
                 class="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle min-w-[160px] w-full sm:w-auto px-8 text-[15px] border-transparent hover:opacity-75 bg-white text-primary"
-                href="/en-ca/shop">
-                <span class="inline-flex gap-x-2 items-center leading-[48px] mt-[-2px]">Shop Now</span>
+                href="/en-ca/shop"
+              >
+                <span class="inline-flex gap-x-2 items-center leading-[48px] mt-[-2px]">
+                  Shop Now
+                </span>
               </a>
             </div>
           </div>

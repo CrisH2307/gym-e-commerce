@@ -1,5 +1,3 @@
 export default function NewProduct() {
-    return (
-        <div>new product</div>
-    )
+  return <div>This is new project</div>;
 }
