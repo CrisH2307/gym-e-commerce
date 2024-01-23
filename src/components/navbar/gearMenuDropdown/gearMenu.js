@@ -1,6 +1,6 @@
 export default function GearMenuDropdown() {
   return (
-    <div className="absolute top-full mt-2 w-full transition-all duration-300">
+    <div className="absolute top-full mt-2 left-0 w-full transition-all duration-300">
       <section
         className="flex flex-col bg-black mb-10"
         style={{
