@@ -10,12 +10,12 @@ export default function HwwMenuDropdown() {
           transform: "translateX(-29%)",
         }}
       >
-        <div className=" flex text-left">
+        <div className="flex text-left">
           <div className="w-1/2">
             <div className="flex pt-20 pl-20">
               <div className="flex flex-wrap items-start flex-1 gap-x-80 space-x-60 lg:gap-x-14">
                 <div className="">
-                  <h3 className=" text-xl lg:text-h-lg xl:text-h-xl font-bold text-white underline">
+                  <h3 className="text-xl lg:text-h-lg xl:text-h-xl font-bold text-white underline">
                     Who we are
                   </h3>
                   <div role="list" className="mt-3 space-y-1">
