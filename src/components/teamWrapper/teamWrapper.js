@@ -16,9 +16,7 @@ export default function TeamWrapper() {
     <div className="mt-14 md:mt-20 lg:mt-24">
       <div className="flex flex-1 w-full justify-center mb-8 md:mb-8 lg:mb-10">
         <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-3">
-          <h1 className=" text-cyan-950 font-bold text-3xl">
-            Connect with your local team
-          </h1>
+          <h1 className=" text-cyan-950 font-bold text-3xl">Connect with your local team</h1>
         </div>
       </div>
       <Swiper
@@ -36,16 +34,12 @@ export default function TeamWrapper() {
             slidesPerGroup: 4,
           },
         }}
-        scrollbar={true}
         navigation={true}
-        pagination={{
-          clickable: true,
-        }}
         modules={[Keyboard, Scrollbar, Navigation, Pagination]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="relative flex flex-col w-full flex-1 justify-center overflow-x-hidden mx-8 md:mx-12 lg:mx-16 mb-8 md:mb-12 lg:mb-16">
+          <div className="relative flex flex-col w-full flex-1 justify-center overflow-x-hidden mx-6 md:mx-114 lg:mx-20 mb-8 md:mb-12 lg:mb-16">
             <div className="flex relative overflow-hidden aspect-w-4 aspect-h-5 bg-neutral-2">
               <div className="relative w-full h-full">
                 <img
@@ -55,12 +49,108 @@ export default function TeamWrapper() {
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent pointer-event-none"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h1 className="text-white font-bold text-base">
-                  Patrick Crawford
-                </h1>
-                <h5 className=" text-white text-sm">
-                  SDDS Software Development Professor
-                </h5>
+                <h1 className="text-white font-bold text-base">Patrick Crawford</h1>
+                <h5 className=" text-white text-sm">SDDS Software Development Professor</h5>
+              </div>
+              <div className="absolute top-0 left-0 right-0 flex flex-col items-end space-y-0.5">
+                <a className="relative size-16 flex justify-between bg-blue-950 text-white">
+                  <FontAwesomeIcon className="p-4" icon={faPhone} />
+                </a>
+                <a className="relative size-16 flex justify-between bg-blue-950 text-white">
+                  <FontAwesomeIcon className="p-4" icon={faEnvelope} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative flex flex-col w-full flex-1 justify-center overflow-x-hidden mx-8 md:mx-12 lg:mx-24 mb-8 md:mb-12 lg:mb-16">
+            <div className="flex relative overflow-hidden aspect-w-4 aspect-h-5 bg-neutral-2">
+              <div className="relative w-full h-full">
+                <img
+                  src="https://ih1.redbubble.net/image.2807373334.4276/raf,360x360,075,t,fafafa:ca443f4786.jpg"
+                  className="size-full w-full object-cover transition-opacity duration-200 inset-0 text-transparent"
+                ></img>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent pointer-event-none"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <h1 className="text-white font-bold text-base">Hot Dog</h1>
+                <h5 className=" text-white text-sm">SDDS Software Development Professor</h5>
+              </div>
+              <div className="absolute top-0 left-0 right-0 flex flex-col items-end space-y-0.5">
+                <a className="relative size-16 flex justify-between bg-blue-950 text-white">
+                  <FontAwesomeIcon className="p-4" icon={faPhone} />
+                </a>
+                <a className="relative size-16 flex justify-between bg-blue-950 text-white">
+                  <FontAwesomeIcon className="p-4" icon={faEnvelope} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative flex flex-col w-full flex-1 justify-center overflow-x-hidden mx-6 md:mx-114 lg:mx-20 mb-8 md:mb-12 lg:mb-16">
+            <div className="flex relative overflow-hidden aspect-w-4 aspect-h-5 bg-neutral-2">
+              <div className="relative w-full h-full">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png"
+                  className="size-full w-full object-cover transition-opacity duration-200 inset-0 text-transparent"
+                ></img>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent pointer-event-none"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <h1 className="text-white font-bold text-base">Hot Dog</h1>
+                <h5 className=" text-white text-sm">SDDS Software Development Professor</h5>
+              </div>
+              <div className="absolute top-0 left-0 right-0 flex flex-col items-end space-y-0.5">
+                <a className="relative size-16 flex justify-between bg-blue-950 text-white">
+                  <FontAwesomeIcon className="p-4" icon={faPhone} />
+                </a>
+                <a className="relative size-16 flex justify-between bg-blue-950 text-white">
+                  <FontAwesomeIcon className="p-4" icon={faEnvelope} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative flex flex-col w-full flex-1 justify-center overflow-x-hidden mx-6 md:mx-114 lg:mx-20 mb-8 md:mb-12 lg:mb-16">
+            <div className="flex relative overflow-hidden aspect-w-4 aspect-h-5 bg-neutral-2">
+              <div className="relative w-full h-full">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png"
+                  className="size-full w-full object-cover transition-opacity duration-200 inset-0 text-transparent"
+                ></img>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent pointer-event-none"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <h1 className="text-white font-bold text-base">Hot Dog</h1>
+                <h5 className=" text-white text-sm">SDDS Software Development Professor</h5>
+              </div>
+              <div className="absolute top-0 left-0 right-0 flex flex-col items-end space-y-0.5">
+                <a className="relative size-16 flex justify-between bg-blue-950 text-white">
+                  <FontAwesomeIcon className="p-4" icon={faPhone} />
+                </a>
+                <a className="relative size-16 flex justify-between bg-blue-950 text-white">
+                  <FontAwesomeIcon className="p-4" icon={faEnvelope} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative flex flex-col w-full flex-1 justify-center overflow-x-hidden mx-6 md:mx-114 lg:mx-20 mb-8 md:mb-12 lg:mb-16">
+            <div className="flex relative overflow-hidden aspect-w-4 aspect-h-5 bg-neutral-2">
+              <div className="relative w-full h-full">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png"
+                  className="size-full w-full object-cover transition-opacity duration-200 inset-0 text-transparent"
+                ></img>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent pointer-event-none"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <h1 className="text-white font-bold text-base">Hot Dog</h1>
+                <h5 className=" text-white text-sm">SDDS Software Development Professor</h5>
               </div>
               <div className="absolute top-0 left-0 right-0 flex flex-col items-end space-y-0.5">
                 <a className="relative size-16 flex justify-between bg-blue-950 text-white">

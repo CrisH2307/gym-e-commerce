@@ -4,7 +4,7 @@ export default function HeaderSection() {
   return (
     <div className="relative flex flex-col min-h-[calc(85vh-48px)] lg:min-h-[calc(75vh-48px)] none none">
       <div className="absolute inset-0 flex -z-100">
-        <div class="relative flex-1 overflow-hidden bg-primary"></div>
+        <div className="relative flex-1 overflow-hidden bg-primary"></div>
       </div>
       <div className="z-10 pointer-events-none absolute top-10 bottom-10 left-6 right-6 md:top-14 md:bottom-14 md:left-14 md:right-14 lg:top-20 lg:bottom-20 lg:left-20 lg:right-20">
         <div className="inline-block absolute top-0 right-0 md:top-auto md:bottom-0 lg:right-auto lg:bottom-auto lg:left-1/2 lg:top-1/2 transform origin-bottom-right md:origin-bottom-left lg:origin-center -rotate-90 -translate-y-full md:translate-y-0 md:translate-x-full lg:-translate-x-1/2 mr-[-2px] lg:mr-0 lg:-ml-[-1px] mt-[-0.4em] lg:mt-0 md:mb-[-1px] lg:mb-0">
@@ -32,30 +32,26 @@ export default function HeaderSection() {
               </div>
             </div>
             <div className="w-full relative px-6 pt-28 pb-10 md:pt-28 md:pb-14 md:px-14 lg:pt-30 lg:pb-20 lg:px-20 flex flex-col gap-y-7 md:gap-y-10">
-              <div class="flex flex-col gap-y-4 md:gap-y-5">
-                <div class="flex flex-col gap-y-2">
-                  <p class="font-medium text-h-sm md:text-h-base text-white">
-                    Introducing
-                  </p>
-                  <h1 class="font-bold text-h-3xl md:text-h-5xl lg:text-h-4xl xl:text-h-4xl 2xl:text-h-5xl max-w-md md:max-w-lg xl:max-w-xl 2xl:max-w-2xl text-white">
+              <div className="flex flex-col gap-y-4 md:gap-y-5">
+                <div className="flex flex-col gap-y-2">
+                  <p className="font-medium text-h-sm md:text-h-base text-white">Introducing</p>
+                  <h1 className="font-bold text-h-3xl md:text-h-5xl lg:text-h-4xl xl:text-h-4xl 2xl:text-h-5xl max-w-md md:max-w-lg xl:max-w-xl 2xl:max-w-2xl text-white">
                     Eleiko Cables
                   </h1>
                 </div>
               </div>
-              <div class="flex flex-wrap gap-4 items-center w-full sm:w-auto">
+              <div className="flex flex-wrap gap-4 items-center w-full sm:w-auto">
                 <a
-                  class="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle min-w-[160px] w-full sm:w-auto px-8 text-[15px] border-transparent hover:opacity-75 bg-white text-primary"
+                  className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle min-w-[160px] w-full sm:w-auto px-8 text-[15px] border-transparent hover:opacity-75 bg-white text-primary"
                   href="/en-ca/contact-sales"
                 >
-                  <span class="inline-flex gap-x-2 items-center leading-[48px] mt-[-2px]">
-                    Contact Sales
-                  </span>
+                  <span className="inline-flex gap-x-2 items-center leading-[48px] mt-[-2px]">Contact Sales</span>
                 </a>
                 <a
-                  class="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle min-w-[160px] w-full sm:w-auto px-8 text-[15px] bg-transparent hover:opacity-75 border-white text-white"
+                  className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle min-w-[160px] w-full sm:w-auto px-8 text-[15px] bg-transparent hover:opacity-75 border-white text-white"
                   href="/en-ca/cables"
                 >
-                  <span class="inline-flex gap-x-2 items-center leading-[48px] mt-[-2px]">
+                  <span className="inline-flex gap-x-2 items-center leading-[48px] mt-[-2px]">
                     Explore Eleiko Cables
                   </span>
                 </a>
@@ -66,40 +62,37 @@ export default function HeaderSection() {
 
         {/* Flex 2 */}
         <div className="relative flex flex-col flex-1 justify-end">
-          <div class="absolute inset-0 flex -z-100">
-            <div class="relative flex-1 overflow-hidden">
+          <div className="absolute inset-0 flex -z-100">
+            <div className="relative flex-1 overflow-hidden">
               <img
                 src="https://png.pngtree.com/background/20230614/original/pngtree-people-exercising-inside-of-a-gym-picture-image_3488212.jpg"
                 className="h-full"
               ></img>
-              <div class="absolute inset-0 bg-primary-dark md:bg-transparent md:bg-gradient-to-t md:from-primary-dark md:via-transparent opacity-60"></div>
+              <div className="absolute inset-0 bg-primary-dark md:bg-transparent md:bg-gradient-to-t md:from-primary-dark md:via-transparent opacity-60"></div>
             </div>
           </div>
-          <div class="z-10 pointer-events-none absolute top-10 bottom-10 left-6 right-6 md:top-14 md:bottom-14 md:left-14 md:right-14 lg:top-20 lg:bottom-20 lg:left-20 lg:right-20">
-            <div class="inline-block absolute top-0 right-0 md:top-auto md:bottom-0 transform origin-bottom-right md:origin-bottom-left -rotate-90 -translate-y-full md:translate-y-0 md:translate-x-full mr-[-2px] mt-[-0.4em] md:mb-[-1px]">
-              <div class="text-xs font-medium leading-none uppercase tracking-[0.4em] whitespace-nowrap text-accent"></div>
+          <div className="z-10 pointer-events-none absolute top-10 bottom-10 left-6 right-6 md:top-14 md:bottom-14 md:left-14 md:right-14 lg:top-20 lg:bottom-20 lg:left-20 lg:right-20">
+            <div className="inline-block absolute top-0 right-0 md:top-auto md:bottom-0 transform origin-bottom-right md:origin-bottom-left -rotate-90 -translate-y-full md:translate-y-0 md:translate-x-full mr-[-2px] mt-[-0.4em] md:mb-[-1px]">
+              <div className="text-xs font-medium leading-none uppercase tracking-[0.4em] whitespace-nowrap text-accent"></div>
             </div>
           </div>
-          <div class="w-full relative px-6 pt-28 pb-10 md:pt-28 md:pb-14 md:px-14 lg:pt-30 lg:pb-20 lg:px-20 flex flex-col gap-y-7 md:gap-y-10">
-            <div class="flex flex-col gap-y-4 md:gap-y-5">
-              <div class="flex flex-col gap-y-2">
-                <h2 class="font-bold text-h-3xl md:text-h-5xl lg:text-h-4xl xl:text-h-4xl 2xl:text-h-5xl max-w-md md:max-w-lg xl:max-w-xl 2xl:max-w-2xl text-white">
+          <div className="w-full relative px-6 pt-28 pb-10 md:pt-28 md:pb-14 md:px-14 lg:pt-30 lg:pb-20 lg:px-20 flex flex-col gap-y-7 md:gap-y-10">
+            <div className="flex flex-col gap-y-4 md:gap-y-5">
+              <div className="flex flex-col gap-y-2">
+                <h2 className="font-bold text-h-3xl md:text-h-5xl lg:text-h-4xl xl:text-h-4xl 2xl:text-h-5xl max-w-md md:max-w-lg xl:max-w-xl 2xl:max-w-2xl text-white">
                   Shop Online
                 </h2>
               </div>
-              <p class="max-w-md font-medium leading-normal text-base md:text-lg 2xl:text-xl 2xl:leading-normal text-white">
-                Access the ultimate lifting experience at home with equipment
-                crafted for a lifetime.{" "}
+              <p className="max-w-md font-medium leading-normal text-base md:text-lg 2xl:text-xl 2xl:leading-normal text-white">
+                Access the ultimate lifting experience at home with equipment crafted for a lifetime.{" "}
               </p>
             </div>
-            <div class="flex flex-wrap gap-4 items-center w-full sm:w-auto">
+            <div className="flex flex-wrap gap-4 items-center w-full sm:w-auto">
               <a
-                class="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle min-w-[160px] w-full sm:w-auto px-8 text-[15px] border-transparent hover:opacity-75 bg-white text-primary"
+                className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle min-w-[160px] w-full sm:w-auto px-8 text-[15px] border-transparent hover:opacity-75 bg-white text-primary"
                 href="/en-ca/shop"
               >
-                <span class="inline-flex gap-x-2 items-center leading-[48px] mt-[-2px]">
-                  Shop Now
-                </span>
+                <span className="inline-flex gap-x-2 items-center leading-[48px] mt-[-2px]">Shop Now</span>
               </a>
             </div>
           </div>
