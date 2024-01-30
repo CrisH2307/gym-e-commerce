@@ -5,6 +5,8 @@ import HeaderSection from "@/components/headerSection/HeaderSection";
 import Navbar from "@/components/navbar/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TeamWrapper from "@/components/teamWrapper/teamWrapper";
+import ExploreBox from "@/components/exploreBox/exploreBox";
+import ShopEquipmentCards from "@/components/shopequipCards/Cards";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <Navbar />
       <HeaderSection />
       <TeamWrapper />
+      <ExploreBox />
+      <ShopEquipmentCards />
       <NewProduct />
       <Footer />
     </div>
