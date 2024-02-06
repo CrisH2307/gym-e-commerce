@@ -1,0 +1,82 @@
+[
+  {
+    "empNum": 1,
+    "empName": "David Weber",
+    "empPhone": 3132693371,
+    "empImg": "img/DavidWeber.png",
+    "empEmail": "david.webber@eleiko.com",
+    "empPosition": "Sales Director",
+    "empDepartment": "Athletics and Recreation",
+    "appointment": false
+  },
+  {
+    "empNum": 2,
+    "empName": "Robert Borcky",
+    "empPhone": 9539028082,
+    "empImg": "img/RobertBorcky.png",
+    "empEmail": "robert.borcky@eleiko.com",
+    "empPosition": "Sales Representative",
+    "empDepartment": "Athletics and Recreation",
+    "appointment": false
+  },
+  {
+    "empNum": 3,
+    "empName": "Derek Schulte",
+    "empPhone": 3072200313,
+    "empImg": "./img/DerekSchulte.png",
+    "empEmail": "derek.schutle@eleiko.com",
+    "empPosition": "Sales Director",
+    "empDepartment": "Commercial, Federal, Inside sales",
+    "appointment": true
+  },
+  {
+    "empNum": 4,
+    "empName": "Adrien Webb",
+    "empPhone": 9033600225,
+    "empImg": "./img/AdrienWebb.png",
+    "empEmail": "adrien.webb@eleiko.com",
+    "empPosition": "Sales Representative",
+    "empDepartment": "Federal Market",
+    "appointment": false
+  },
+  {
+    "empNum": 5,
+    "empName": "Matt Winters",
+    "empPhone": 7372034717,
+    "empImg": "./img/MattWinters.png",
+    "empEmail": "matt.winters@eleiko.com",
+    "empPosition": "Sales Representative",
+    "empDepartment": "Commercial, South Central",
+    "appointment": false
+  },
+  {
+    "empNum": 6,
+    "empName": "Kat Widup",
+    "empPhone": 8664479441,
+    "empImg": "./img/KatWidup.png",
+    "empEmail": "kat.widup@eleiko.com",
+    "empPosition": "Inside Sales Manager",
+    "empDepartment": "",
+    "appointment": true
+  },
+  {
+    "empNum": 7,
+    "empName": "Alex Murray",
+    "empPhone": 7736722061,
+    "empImg": "./img/AlexMurray.png",
+    "empEmail": "alex.murray@eleiko.com",
+    "empPosition": "Operations Manager",
+    "empDepartment": "",
+    "appointment": false
+  },
+  {
+    "empNum": 8,
+    "empName": "Magnus Nyberg",
+    "empPhone": 7372020645,
+    "empImg": "./img/MagnusNyberg.png",
+    "empEmail": "magnus.nyberg@eleiko.com",
+    "empPosition": "President",
+    "empDepartment": "Eleiko Sport Inc",
+    "appointment": false
+  }
+]
