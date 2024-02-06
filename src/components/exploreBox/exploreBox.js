@@ -1,7 +1,7 @@
 export default function ExploreBox() {
   return (
     <div className="relative flex flex-col">
-      <div className="relative flex flex-col flex-1 px-6 pd:px-14 lg:px-20 pt-8 gap-1 justify-center overflow-x-hidden">
+      <div className="relative flex flex-col flex-1 px-6 pd:px-14 lg:px-20 pt-20 gap-1 justify-center overflow-x-hidden">
         <div className="relative flex -ml-3 md:-ml-4 lg:-ml-5">
           <div className="relative flex flex-col pl-3 md:pl-4 lg:pl-5 flex-shrink-0 w-11/12 md:w-full lg:w-1/2 overflow-hidden">
             <div className="h-5/6 overflow-hidden bg-primary">

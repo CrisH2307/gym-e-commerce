@@ -4,7 +4,7 @@ export default function HeaderSection() {
   return (
     <div className="relative flex flex-col min-h-[calc(85vh-48px)] lg:min-h-[calc(75vh-48px)] none none">
       <div className="absolute inset-0 flex -z-100">
-        <div className="relative flex-1 overflow-hidden bg-primary"></div>
+        <div className="relative flex-1 overflow-hidden bg-blue-950"></div>
       </div>
       <div className="z-10 pointer-events-none absolute top-10 bottom-10 left-6 right-6 md:top-14 md:bottom-14 md:left-14 md:right-14 lg:top-20 lg:bottom-20 lg:left-20 lg:right-20">
         <div className="inline-block absolute top-0 right-0 md:top-auto md:bottom-0 lg:right-auto lg:bottom-auto lg:left-1/2 lg:top-1/2 transform origin-bottom-right md:origin-bottom-left lg:origin-center -rotate-90 -translate-y-full md:translate-y-0 md:translate-x-full lg:-translate-x-1/2 mr-[-2px] lg:mr-0 lg:-ml-[-1px] mt-[-0.4em] lg:mt-0 md:mb-[-1px] lg:mb-0">
@@ -20,7 +20,7 @@ export default function HeaderSection() {
             <div className="absolute inset-0 flex -z-100">
               <div className="relative flex-1 overflow-hidden">
                 <img
-                  src="https://png.pngtree.com/background/20230614/original/pngtree-people-exercising-inside-of-a-gym-picture-image_3488212.jpg"
+                  src="https://ik.imagekit.io/eleiko/https://fra1.digitaloceanspaces.com/eleiko/cms-prod/50581c66ea32b03e7702c34c64d64411.mp4/ik-thumbnail.jpg"
                   className="h-full w-full"
                 ></img>
                 <div className="absolute inset-0 bg-black opacity-30"></div>
@@ -65,10 +65,10 @@ export default function HeaderSection() {
           <div className="absolute inset-0 flex -z-100">
             <div className="relative flex-1 overflow-hidden">
               <img
-                src="https://png.pngtree.com/background/20230614/original/pngtree-people-exercising-inside-of-a-gym-picture-image_3488212.jpg"
-                className="h-full"
+                src="https://eleiko.com/_next/image?url=https%3A%2F%2Feleiko.fra1.digitaloceanspaces.com%2Fcms-prod%2Fa3107c4eb9f8795249599d3a80609a78.jpg&w=3840&q=75"
+                className="h-full opacity-40"
               ></img>
-              <div className="absolute inset-0 bg-primary-dark md:bg-transparent md:bg-gradient-to-t md:from-primary-dark md:via-transparent opacity-60"></div>
+              <div className="absolute inset-0 bg-blue-950 lg:bg-transparent lg:bg-gradient-to-t lg:via-transparent md:bg-transparent md:bg-gradient-to-t md:via-transparent"></div>
             </div>
           </div>
           <div className="z-10 pointer-events-none absolute top-10 bottom-10 left-6 right-6 md:top-14 md:bottom-14 md:left-14 md:right-14 lg:top-20 lg:bottom-20 lg:left-20 lg:right-20">

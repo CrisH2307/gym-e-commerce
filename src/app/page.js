@@ -7,16 +7,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import TeamWrapper from "@/components/teamWrapper/teamWrapper";
 import ExploreBox from "@/components/exploreBox/exploreBox";
 import ShopEquipmentCards from "@/components/shopequipCards/Cards";
+import CardSide from "@/components/cardSide/CardSide";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-white">
       <Header />
       <Navbar />
       <HeaderSection />
       <TeamWrapper />
       <ExploreBox />
       <ShopEquipmentCards />
+      <CardSide />
       <NewProduct />
       <Footer />
     </div>
