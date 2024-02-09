@@ -1,3 +1,6 @@
-export default function NewProduct() {
-  return <div>new product</div>;
-}
+import React from "react";
+const NewProducts = () => {
+  return <div className="new-collections">NewProduct</div>;
+};
+
+export default NewProducts;

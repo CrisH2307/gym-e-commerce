@@ -17,7 +17,9 @@ export default function TeamWrapper() {
     <div className="mt-14 md:mt-20 lg:mt-24">
       <div className="flex flex-1 justify-center md:mb-8 lg:mb-16">
         <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-3">
-          <h1 className=" text-cyan-950 font-bold text-3xl">Connect with your local team</h1>
+          <h1 className=" text-cyan-950 font-bold text-3xl">
+            Connect with your local team
+          </h1>
         </div>
       </div>
       <Swiper
@@ -52,9 +54,12 @@ export default function TeamWrapper() {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent pointer-event-none"></div>
                 <div className="absolute bottom-0 left-0 right-0 pb-4 px-7">
-                  <h1 className="text-white font-bold text-base">{emp.empName}</h1>
+                  <h1 className="text-white font-bold text-base">
+                    {emp.empName}
+                  </h1>
                   <h5 className=" text-white text-sm font-semi-bold">
-                    {emp.empPosition} {emp.empDepartment !== "" ? `- ${emp.empDepartment}` : ""}
+                    {emp.empPosition}{" "}
+                    {emp.empDepartment !== "" ? `- ${emp.empDepartment}` : ""}
                   </h5>
                 </div>
                 <div className="absolute top-0 left-0 right-0 flex flex-col items-end space-y-0.5">
