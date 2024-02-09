@@ -1,5 +1,6 @@
-//import NewProduct from "@/components/products/NewProducts";
+import NewProduct from "@/components/NewProducts";
 import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
 import HeaderSection from "@/components/headerSection/HeaderSection";
 import Navbar from "@/components/navbar/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -9,9 +10,11 @@ import ShopEquipmentCards from "@/components/shopequipCards/Cards";
 import CardSide from "@/components/cardSide/CardSide";
 import Popular from "@/components/Popular/Popular";
 
-export default function Home() {
+export default function Home({ newProducts }) {
+  console.log({ newProducts });
   return (
-    <div className="bg-white">
+    <div>
+      <Header />
       <Navbar />
       <HeaderSection />
       <Popular />
