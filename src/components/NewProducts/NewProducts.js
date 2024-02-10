@@ -1,3 +1,3 @@
 export default function NewProduct() {
-  return <div>new product</div>;
+  return <div>new products</div>;
 }
