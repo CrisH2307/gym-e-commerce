@@ -1,4 +1,3 @@
-import NewProduct from "@/components/products/NewProducts";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import HeaderSection from "@/components/headerSection/HeaderSection";
@@ -8,18 +7,18 @@ import TeamWrapper from "@/components/teamWrapper/teamWrapper";
 import ExploreBox from "@/components/exploreBox/exploreBox";
 import ShopEquipmentCards from "@/components/shopequipCards/Cards";
 import CardSide from "@/components/cardSide/CardSide";
+import Products from "@/components/products/Products";
 
 export default function Home() {
   return (
     <div className="bg-white">
-      <Header />
       <Navbar />
       <HeaderSection />
-      <TeamWrapper />
       <ExploreBox />
       <ShopEquipmentCards />
       <CardSide />
-      <NewProduct />
+      <TeamWrapper />
+      <Products />
       <Footer />
     </div>
   );

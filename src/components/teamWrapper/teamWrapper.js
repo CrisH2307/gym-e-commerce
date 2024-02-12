@@ -41,7 +41,6 @@ export default function TeamWrapper() {
       >
         {teamData.map((emp) => (
           <SwiperSlide key={emp.empNum}>
-            {console.log(emp.empImg)}
             <div className="flex mx-6 md:mx-14 lg:mx-20 w-11/12 flex-col flex-1 justify-center overflow-x-hidden">
               <div className="flex relative overflow-hidden mb-8 md:mb-8 lg:mb-10">
                 <div className="">

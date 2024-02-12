@@ -7,7 +7,7 @@ export default function EquipmentMenuDropdown() {
           height: "100vh",
           width: "120vw",
           left: "50%",
-          transform: "translateX(-8%)",
+          transform: "translateX(-10.9%)",
         }}
       >
         <div className=" flex text-left">
