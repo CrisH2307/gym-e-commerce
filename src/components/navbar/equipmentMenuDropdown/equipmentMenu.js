@@ -2,10 +2,10 @@ export default function EquipmentMenuDropdown() {
   return (
     <div className="absolute delay-300 top-full mt-2 left-0 w-full transition-all duration-300">
       <section
-        className="flex flex-col bg-blue-950 mb-10"
+        className="flex flex-col bg-[#002A39] mb-10"
         style={{
-          height: "100vh",
-          width: "120vw",
+          height: "75vh",
+          width: "145vw",
           left: "50%",
           transform: "translateX(-12.4%)",
         }}
@@ -14,7 +14,9 @@ export default function EquipmentMenuDropdown() {
           <div className="w-1/2">
             <div className=" grid lg:grid-cols-2  gap-y-3 pl-20 pt-12 text-xl">
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline">View All</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline">
+                  View All
+                </a>
               </div>
               <div
                 className="text-blue-500 font-bold"
@@ -24,53 +26,81 @@ export default function EquipmentMenuDropdown() {
                 }}
                 href="/barbells"
                 onMouseEnter={() => {
-                  document.getElementById("newArrivals").style.transform = "translateX(5px)";
+                  document.getElementById("newArrivals").style.transform =
+                    "translateX(5px)";
                 }}
                 onMouseLeave={() => {
-                  document.getElementById("newArrivals").style.transform = "translateX(0px)";
+                  document.getElementById("newArrivals").style.transform =
+                    "translateX(0px)";
                 }}
                 id="newArrivals"
               >
                 {"-> New Arrivals"}
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl ">Barbells</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl ">
+                  Barbells
+                </a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Weight Plates</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
+                  Weight Plates
+                </a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Lifting Sets</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
+                  Lifting Sets
+                </a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Platform</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
+                  Platform
+                </a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Barbell Collars</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
+                  Barbell Collars
+                </a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Weight Benches</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
+                  Weight Benches
+                </a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Dumbbells</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
+                  Dumbbells
+                </a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Racks & Rigs</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
+                  Racks & Rigs
+                </a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Kettlebells</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
+                  Kettlebells
+                </a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Storage</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
+                  Storage
+                </a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Outdoor</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
+                  Outdoor
+                </a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Gym Flooring</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
+                  Gym Flooring
+                </a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Training Tools</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
+                  Training Tools
+                </a>
               </div>
               <div className=" flex items-center" href="/barbells">
                 <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
@@ -78,10 +108,14 @@ export default function EquipmentMenuDropdown() {
                 </a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Strength Machines</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
+                  Strength Machines
+                </a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Gear</a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
+                  Gear
+                </a>
               </div>
               <div
                 className="text-blue-500 font-bold"
@@ -91,10 +125,12 @@ export default function EquipmentMenuDropdown() {
                 }}
                 href="/barbells"
                 onMouseEnter={() => {
-                  document.getElementById("specialOffers").style.transform = "translateX(5px)";
+                  document.getElementById("specialOffers").style.transform =
+                    "translateX(5px)";
                 }}
                 onMouseLeave={() => {
-                  document.getElementById("specialOffers").style.transform = "translateX(0px)";
+                  document.getElementById("specialOffers").style.transform =
+                    "translateX(0px)";
                 }}
                 id="specialOffers"
               >

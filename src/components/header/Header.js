@@ -3,7 +3,7 @@ import React from "react";
 export default function Header() {
   return (
     <>
-      <div className="relative z-50 h-12 bg-blue-950 flex items-center w-full overflow-hidden">
+      <div className="relative z-50 h-12 bg-[#001D28] flex items-center w-full overflow-hidden">
         <div className="hidden h-full md:flex">
           <div className="relative w-full flex px-6 md:px-14 lg:px-20 flex-col flex-1">
             <div className="flex justify-end flex-1">
@@ -21,7 +21,7 @@ export default function Header() {
                       <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"></path>
                       <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"></path>
                     </svg>
-                    <span>Contact Us</span>
+                    <p>Contact Us</p>
                   </a>
                 </div>
               </div>
