@@ -7,7 +7,7 @@ export default function GearMenuDropdown() {
           height: "100vh",
           width: "120vw",
           left: "50%",
-          transform: "translateX(-14%)",
+          transform: "translateX(-17.5%)",
         }}
       >
         <div className=" flex text-left">

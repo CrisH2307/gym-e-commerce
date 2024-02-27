@@ -9,7 +9,7 @@ export default function ExploreBox() {
                 autoPlay=""
                 playsInline=""
                 loop=""
-                poster="https://ik.imagekit.io/eleiko/https://eleiko.fra1.digitaloceanspaces.com/cms-prod/aa8fd0afe93c8e4a5d1cfd54ab70a0bc.mp4/ik-thumbnail.jpg"
+                poster="https://eleiko.com/_next/image?url=https%3A%2F%2Feleiko.fra1.digitaloceanspaces.com%2Fcms-prod%2F1047cc630d0ad099f6a357a22cf9958c.webp&w=3840&q=75"
                 className="w-full h-full object-cover bottom-0 right-0"
               ></video>
               <div className="absolute inset-0 from-black via-transparent to-transparent opacity-40"></div>
@@ -40,7 +40,7 @@ export default function ExploreBox() {
           <div className="relative flex flex-col pl-3 md:pl-4 lg:pl-5 flex-shrink-0 w-11/12 md:w-full lg:w-1/2 overflow-hidden">
             <div className="h-5/6 overflow-hidden">
               <img
-                src="https://eleiko.fra1.digitaloceanspaces.com/cms-prod/c8a489f5f5c532170ac77f06ab56869b.webp"
+                src="https://eleiko.com/_next/image?url=https%3A%2F%2Feleiko.fra1.digitaloceanspaces.com%2Fcms-prod%2F1896d8796eb8084f48925223d1f40b97.webp&w=3840&q=75"
                 className="w-full h-full object-cover bottom-0 right-0 transition-opacity duration-200 group-hover:opacity-75"
               ></img>
               <div className="absolute inset-0 from-black via-transparent to-transparent opacity-40"></div>

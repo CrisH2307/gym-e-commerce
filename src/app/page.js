@@ -8,19 +8,19 @@ import ExploreBox from "@/components/exploreBox/exploreBox";
 import ShopEquipmentCards from "@/components/shopequipCards/Cards";
 import CardSide from "@/components/cardSide/CardSide";
 import Popular from "@/components/Popular/Popular";
+import Header from "@/components/header/Header";
 
 export default function Home({ newProducts }) {
-  //console.log({ newProducts });
   return (
     <div>
+      <Header />
       <Navbar />
       <HeaderSection />
-      <Popular />
-      {/* <NewProduct /> */}
-      <TeamWrapper />
       <ExploreBox />
       <ShopEquipmentCards />
       <CardSide />
+      <TeamWrapper />
+      <Popular />
       <Footer />
     </div>
   );

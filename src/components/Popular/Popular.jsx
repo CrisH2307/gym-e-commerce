@@ -1,6 +1,6 @@
 "use client";
-
-import React from "react";
+import { Keyboard, Scrollbar, Navigation, Pagination } from "swiper/modules";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -9,24 +9,37 @@ import "swiper/css/scrollbar";
 import data_product from "../Assets/data";
 import Item from "../Item/Item";
 
-const Popular = () => {
+export default function Popular() {
+  const swiperRef = useRef(null);
   return (
-    <div className="p-4 border-0">
-      <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-3">
-        <h1 className="text-cyan-950 font-bold text-3xl 20px my-10">
-          Popular Products
-        </h1>
+    <div className="border-0">
+      <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-3 ml-12 mt-16 p-7">
+        <h1 className="text-cyan-950 font-bold text-4xl my-10">Popular Products</h1>
+        <a className="font-medium text-md hover:no-underline hover:delay-300ms inline-flex items-end">
+          <span className="inline-block text-blue-950 transition-all duration-300 no-underline group-hover:border-transparent">
+            View All
+          </span>
+        </a>
       </div>
       <div>
         <Swiper
-          spaceBetween={8}
-          slidesPerView={4}
-          navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-          className="shadow-lg rounded-lg border-0"
+          ref={swiperRef}
+          slidesPerView={1}
+          centeredSlides={false}
+          slidesPerGroupSkip={1}
+          grabCursor={true}
+          keyboard={{
+            enabled: true,
+          }}
+          breakpoints={{
+            700: {
+              slidesPerView: 4,
+              slidesPerGroup: 4,
+            },
+          }}
+          navigation={true}
+          modules={[Keyboard, Scrollbar, Navigation, Pagination]}
+          className="mySwiper"
         >
           {data_product.map((item, i) => (
             <SwiperSlide key={i} className="flex items-center justify-center">
@@ -44,6 +57,4 @@ const Popular = () => {
       </div>
     </div>
   );
-};
-
-export default Popular;
+}

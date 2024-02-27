@@ -7,7 +7,7 @@ export default function HwwMenuDropdown() {
           height: "100vh",
           width: "120vw",
           left: "50%",
-          transform: "translateX(-29%)",
+          transform: "translateX(-29.42%)",
         }}
       >
         <div className="flex text-left">
