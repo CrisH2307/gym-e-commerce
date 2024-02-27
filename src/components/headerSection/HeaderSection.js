@@ -45,7 +45,7 @@ export default function HeaderSection() {
                 </div>
               </div>
               <div className="flex flex-wrap gap-4 items-center w-full sm:w-auto">
-                <a className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle min-w-[160px] w-full sm:w-auto px-8 text-[15px] border-transparent hover:opacity-75 bg-white text-primary">
+                <a className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle min-w-[160px] w-full sm:w-auto px-8 text-[15px] border-transparent hover:opacity-75 bg-white text-black">
                   <span className="inline-flex gap-x-2 items-center leading-[48px] mt-[-2px]">
                     Explore Eleiko Cables
                   </span>
