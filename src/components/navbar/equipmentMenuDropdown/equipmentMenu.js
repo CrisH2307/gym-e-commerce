@@ -1,13 +1,17 @@
+import { mainStyle } from "@/components/headerSection/HeaderSection";
+
 export default function EquipmentMenuDropdown() {
   return (
     <div className="absolute delay-300 top-full mt-2 left-0 w-full transition-all duration-300">
       <section
-        className="flex flex-col bg-blue-950 mb-10"
+        className="flex flex-col mb-10"
         style={{
+          ...mainStyle,
           height: "100vh",
           width: "120vw",
           left: "50%",
           transform: "translateX(-12.4%)",
+          transition: "transform 0.3s ease-in-out 1s",
         }}
       >
         <div className=" flex text-left">

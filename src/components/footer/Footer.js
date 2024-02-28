@@ -1,13 +1,11 @@
 "use client";
 import React from "react";
+import { mainStyle, textStyle } from "../headerSection/HeaderSection";
 
 export default function Footer() {
   return (
     <>
-      <div
-        className="relative w-full flex px-6 md:px-14 lg:px-20 flex-col py-20"
-        style={{ backgroundColor: "#012433" }}
-      >
+      <div className="relative w-full flex px-6 md:px-14 lg:px-20 flex-col py-20" style={mainStyle}>
         <div className="flex flex-wrap justify-between gap-12 lg:gap-x-14">
           <div className="flex">
             <div className="flex flex-wrap items-start flex-1 gap-12 lg:gap-x-14">
@@ -52,7 +50,10 @@ export default function Footer() {
             </p>
             <div className="mt-8">
               <button className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle px-7 xl:px-8 text-[15px] border-transparent hover:opacity-75 bg-white text-primary">
-                <span className="inline-flex gap-x-2 items-center leading-[38px] xl:leading-[48px] mt-[-2px]">
+                <span
+                  style={textStyle}
+                  className="inline-flex gap-x-2 items-center leading-[38px] xl:leading-[48px] mt-[-2px]"
+                >
                   Subscribe
                 </span>
               </button>

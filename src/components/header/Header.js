@@ -1,9 +1,10 @@
 import React from "react";
+import { mainStyle } from "../headerSection/HeaderSection";
 
 export default function Header() {
   return (
     <>
-      <div className="relative z-50 h-12 bg-blue-950 flex items-center w-full overflow-hidden">
+      <div style={mainStyle} className="relative z-50 h-12 flex items-center w-full overflow-hidden">
         <div className="hidden h-full md:flex">
           <div className="relative w-full flex px-6 md:px-14 lg:px-20 flex-col flex-1">
             <div className="flex justify-end flex-1">

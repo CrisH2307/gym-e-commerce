@@ -24,12 +24,12 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="w-full bg-white fixed top-0 left-0 right-0 z-10">
+      <nav className="w-full bg-transparent fixed top-0 left-0 right-0 z-10 mt-9">
         <div className="mx-3 lg:max-w-full md:items-center md:flex md:px-8">
           <div>
             <div className="mx-9 flex py-4 md:py-4 md:block">
               <span
-                className="text-3xl text-blue-950 font-black m-[-1px] whitespace-nowrap"
+                className="text-3xl text-white font-black m-[-1px] whitespace-nowrap"
                 style={{ clip: "rect(0,0,0,0)" }}
               >
                 ELEIKO
@@ -64,7 +64,7 @@ export default function Navbar() {
                   onMouseLeave={() => handleMouseLeave(0)}
                 >
                   <Link
-                    className="no-underline font-bold text-blue-950 "
+                    className="no-underline font-bold text-white "
                     href="/equipment"
                     onClick={() => setNavbar(!navbar)}
                   >
@@ -81,11 +81,7 @@ export default function Navbar() {
                   onMouseEnter={() => handleMouseEnter(1)}
                   onMouseLeave={() => handleMouseLeave(1)}
                 >
-                  <Link
-                    className="no-underline font-bold text-blue-950"
-                    href="/gear"
-                    onClick={() => setNavbar(!navbar)}
-                  >
+                  <Link className="no-underline font-bold text-white" href="/gear" onClick={() => setNavbar(!navbar)}>
                     Gear
                   </Link>
                   {hoveredItems[1] && <GearMenuDropdown />}
@@ -100,7 +96,7 @@ export default function Navbar() {
                   onMouseLeave={() => handleMouseLeave(2)}
                 >
                   <Link
-                    className="no-underline font-bold text-blue-950"
+                    className="no-underline font-bold text-white"
                     href="/education"
                     onClick={() => setNavbar(!navbar)}
                   >
@@ -117,7 +113,7 @@ export default function Navbar() {
                   onMouseLeave={() => handleMouseLeave(3)}
                 >
                   <Link
-                    className="no-underline font-bold text-blue-950"
+                    className="no-underline font-bold text-white"
                     href="/stories"
                     onClick={() => setNavbar(!navbar)}
                   >
@@ -133,11 +129,7 @@ export default function Navbar() {
                   onMouseEnter={() => handleMouseEnter(4)}
                   onMouseLeave={() => handleMouseLeave(4)}
                 >
-                  <Link
-                    className="no-underline font-bold text-blue-950"
-                    href="/work"
-                    onClick={() => setNavbar(!navbar)}
-                  >
+                  <Link className="no-underline font-bold text-white" href="/work" onClick={() => setNavbar(!navbar)}>
                     How we work
                   </Link>
                   {hoveredItems[4] && <HwwMenuDropdown />}
@@ -155,7 +147,7 @@ export default function Navbar() {
             <ul className="h-screen md:h-auto items-end justify-end md:flex">
               <li className="pb-6 text-sm py-1 px-3 text-center">
                 <Link
-                  className="no-underline font-bold text-blue-950 justify-end border-b-4 border-blue-950"
+                  className="no-underline font-bold text-white justify-end border-b-4 border-white"
                   style={{
                     transition: hoveredItems[0] ? "border-color 0.4 ease" : "3px solid blue",
                   }}
@@ -166,29 +158,17 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="pb-6 text-sm py-1 px-3 text-center">
-                <Link
-                  className="font-bold text-blue-950 justify-end"
-                  href="/equipment"
-                  onClick={() => setNavbar(navbar)}
-                >
+                <Link className="font-bold text-white justify-end" href="/equipment" onClick={() => setNavbar(navbar)}>
                   <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </Link>
               </li>
               <li className="pb-6 text-sm py-1 px-3 text-center">
-                <Link
-                  className="font-bold text-blue-950 justify-end"
-                  href="/equipment"
-                  onClick={() => setNavbar(navbar)}
-                >
+                <Link className="font-bold text-white justify-end" href="/equipment" onClick={() => setNavbar(navbar)}>
                   <FontAwesomeIcon icon={faTableList} />
                 </Link>
               </li>
               <li className="pb-6 text-sm py-1 px-3 text-center">
-                <Link
-                  className="font-bold text-blue-950 justify-end"
-                  href="/equipment"
-                  onClick={() => setNavbar(navbar)}
-                >
+                <Link className="font-bold text-white justify-end" href="/equipment" onClick={() => setNavbar(navbar)}>
                   <FontAwesomeIcon icon={faCartShopping} />{" "}
                 </Link>
               </li>

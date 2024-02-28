@@ -1,9 +1,11 @@
+import { mainStyle } from "@/components/headerSection/HeaderSection";
 export default function GearMenuDropdown() {
   return (
     <div className="absolute top-full mt-2 left-0 w-full transition-all duration-300">
       <section
         className="flex flex-col bg-blue-950 mb-10"
         style={{
+          ...mainStyle,
           height: "100vh",
           width: "120vw",
           left: "50%",
