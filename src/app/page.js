@@ -18,7 +18,7 @@ export default function Home({ newProducts }) {
       <ExploreBox />
       <ShopEquipmentCards />
       <CardSide />
-      <TeamWrapper />
+      {/* <TeamWrapper /> */}
       <Popular />
       <Footer />
     </div>

@@ -12,6 +12,8 @@ let data_product = [
     image: p1_img,
     new_price: 105.0,
     old_price: 80.5,
+    des: "pair",
+    single_price: false,
   },
   {
     id: 2,
@@ -19,6 +21,8 @@ let data_product = [
     image: p2_img,
     new_price: 85.0,
     old_price: 120.5,
+    des: "",
+    single_price: true,
   },
   {
     id: 3,
@@ -26,6 +30,8 @@ let data_product = [
     image: p3_img,
     new_price: 60.0,
     old_price: 100.5,
+    des: "",
+    single_price: false,
   },
   {
     id: 4,
@@ -33,6 +39,8 @@ let data_product = [
     image: p4_img,
     new_price: 100.0,
     old_price: 150.0,
+    des: "Black",
+    single_price: true,
   },
   {
     id: 5,
@@ -40,6 +48,8 @@ let data_product = [
     image: p5_img,
     new_price: 1000.0,
     old_price: 1500.0,
+    des: "",
+    single_price: false,
   },
   {
     id: 6,
@@ -47,6 +57,8 @@ let data_product = [
     image: p6_img,
     new_price: 1000.0,
     old_price: 1500.0,
+    des: "",
+    single_price: false,
   },
 ];
 

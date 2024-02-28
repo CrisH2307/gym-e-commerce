@@ -49,7 +49,9 @@ export default function Popular() {
                 image={item.image}
                 new_price={item.new_price}
                 old_price={item.old_price}
-                className="p-4 bg-white rounded-md shadow-md"
+                des={item.des}
+                single_price={item.single_price}
+                className="p-5 bg-white rounded-md shadow-md"
               />
             </SwiperSlide>
           ))}
