@@ -1,7 +1,9 @@
 import p1_img from "./product1.webp";
-import p2_img from "./product_2.png";
-import p3_img from "./product_3.png";
-import p4_img from "./product_4.png";
+import p2_img from "./product2.webp";
+import p3_img from "./product3.webp";
+import p4_img from "./product4.webp";
+import p5_img from "./product5.webp";
+import p6_img from "./product6.webp";
 
 let data_product = [
   {
@@ -20,24 +22,31 @@ let data_product = [
   },
   {
     id: 3,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Adjustable Benches",
     image: p3_img,
     new_price: 60.0,
     old_price: 100.5,
   },
   {
     id: 4,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Oppen Bar",
     image: p4_img,
     new_price: 100.0,
     old_price: 150.0,
   },
   {
     id: 5,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p4_img,
-    new_price: 100.0,
-    old_price: 150.0,
+    name: "IPF Powerlifting Competition Plate",
+    image: p5_img,
+    new_price: 1000.0,
+    old_price: 1500.0,
+  },
+  {
+    id: 6,
+    name: "Sport Training Plate",
+    image: p6_img,
+    new_price: 1000.0,
+    old_price: 1500.0,
   },
 ];
 
