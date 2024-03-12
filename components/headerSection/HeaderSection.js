@@ -2,6 +2,7 @@ import React from "react";
 
 export const mainStyle = { backgroundColor: "#08384d" };
 export const textStyle = { color: "#08384d" };
+export const secondaryStyle = { backgroundColor: "#0b232e" };
 
 export default function HeaderSection() {
   return (

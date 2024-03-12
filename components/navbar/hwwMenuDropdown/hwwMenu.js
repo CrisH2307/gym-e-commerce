@@ -1,5 +1,6 @@
-import { mainStyle } from "@/components/headerSection/HeaderSection";
-export default function GearMenuDropdown() {
+import { mainStyle } from "../../headerSection/HeaderSection";
+
+export default function HwwMenuDropdown() {
   return (
     <div className="absolute top-full mt-2 left-0 w-full transition-all duration-300">
       <section
@@ -9,23 +10,28 @@ export default function GearMenuDropdown() {
           height: "100vh",
           width: "120vw",
           left: "50%",
-          transform: "translateX(-17.5%)",
+          transform: "translateX(-29.42%)",
         }}
       >
-        <div className=" flex text-left">
+        <div className="flex text-left">
           <div className="w-1/2">
-            <div className=" grid lg:grid-cols-1  gap-y-3 pl-20 pt-12 text-xl">
-              <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline">View All</a>
-              </div>
-              <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl ">Lifting Gear</a>
-              </div>
-              <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Apparel</a>
-              </div>
-              <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Accessories</a>
+            <div className="flex pt-20 pl-20">
+              <div className="flex flex-wrap items-start flex-1 gap-x-80 space-x-60 lg:gap-x-14">
+                <div className="">
+                  <h3 className="text-xl lg:text-h-lg xl:text-h-xl font-bold text-white underline">Who we are</h3>
+                  <div role="list" className="mt-3 space-y-1">
+                    <div className="block font-bold text-lg text-white">Out Purpose</div>
+                    <div className="block font-bold text-lg text-white">Our Story</div>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl lg:text-h-lg xl:text-h-xl font-bold text-white underline">Who we serve</h3>
+                  <div className="mt-3 space-y-1">
+                    <div className="block font-bold text-lg text-white">Competition</div>
+                    <div className="block font-bold text-lg text-white">Facility</div>
+                    <div className="block font-bold text-lg text-white">Home</div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="flex pt-80 mt-2.5">
@@ -45,7 +51,6 @@ export default function GearMenuDropdown() {
               ></img>
             </div>
           </div>
-
           <div className="w-1/2">
             <img
               src="https://imgs.search.brave.com/2aGyvAoIC5fR7OhMrxZiaxPMpyO5r4qxKmk2LImtQ7c/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA2LzUxLzQ5Lzkx/LzM2MF9GXzY1MTQ5/OTEyOF8wMnV6cHlR/Y0JJMXlwakY5ek5h/VnhnV3ZmNkpqNERJ/VS5qcGc"

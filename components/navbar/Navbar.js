@@ -129,7 +129,7 @@ export default function Navbar() {
                   onMouseEnter={() => handleMouseEnter(4)}
                   onMouseLeave={() => handleMouseLeave(4)}
                 >
-                  <Link className="no-underline font-bold text-white" href="/work" onClick={() => setNavbar(!navbar)}>
+                  <Link className="no-underline font-bold text-white" href="/about" onClick={() => setNavbar(!navbar)}>
                     How we work
                   </Link>
                   {hoveredItems[4] && <HwwMenuDropdown />}

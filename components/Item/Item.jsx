@@ -1,6 +1,7 @@
 import React from "react";
 import "./Item.css";
 import Image from "next/image";
+import { textStyle } from "../headerSection/HeaderSection";
 export default function Item(props) {
   return (
     <>
@@ -12,9 +13,9 @@ export default function Item(props) {
         </div>
         <div className="mt-4">
           <div className="flex justify-between align-top">
-            <p>{props.name}</p>
+            <p style={textStyle}>{props.name}</p>
           </div>
-          {props.des && <h6 className="opacity-40 font-bold text-sm mb-2.5">{props.des}</h6>}
+          {props.des && <h6 className="opacity-40 text-black font-bold text-sm mb-2.5">{props.des}</h6>}
         </div>
         <div className="item-prices flex flex-wrap mt-1 gap-x-2">
           <div className="item-prices-new">

@@ -1,4 +1,4 @@
-import { mainStyle } from "@/components/headerSection/HeaderSection";
+import { mainStyle } from "../../headerSection/HeaderSection";
 
 export default function EquipmentMenuDropdown() {
   return (

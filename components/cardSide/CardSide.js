@@ -1,3 +1,5 @@
+import { mainStyle, textStyle } from "../headerSection/HeaderSection";
+
 export default function CardSide() {
   return (
     <div>
@@ -13,15 +15,20 @@ export default function CardSide() {
         <div className="flex lg:flex-1 justify-start mt-6 md:mt-8 lg:mt-24 w-full">
           <div className="w-full flex flex-col">
             <div className="flex flex-col w-full max-w-xl 2xl:max-w-2xl gap-y-8 lg:gap-y-10 xl:gap-y-12 2xl:gap-y-14">
-              <div className="flex flex-col gap-y-8">
-                <h1 className="font-bold text-blue-950 text-4xl">The Choice of Champions</h1>
-                <p className="text-blue-950 text-xl font-medium leading-normal">
+              <div style={textStyle} className="flex flex-col gap-y-8">
+                <h1 style={textStyle} className="font-bold text-4xl">
+                  The Choice of Champions
+                </h1>
+                <p style={textStyle} className="text-xl font-medium leading-normal">
                   Eleiko is uniquely certified by IWF, IPF and WPPO. We deliver products that help athletes push the
                   boundaries of human potential through our focus on precision, quality, and safety.
                 </p>
               </div>
               <div className="flex flex-wrap items-center mt-[-10px]">
-                <a className="no-underline  cursor-pointer transition duration-200 font-semibold rounded-full text-center xl:px-9 text-[13px] xl:text-[15px] hover:bg-opacity-85 text-white bg-blue-950">
+                <a
+                  style={mainStyle}
+                  className="no-underline  cursor-pointer transition duration-200 font-semibold rounded-full text-center xl:px-9 text-[13px] xl:text-[15px] hover:bg-opacity-85 text-white bg-blue-950"
+                >
                   <span className="inline-flex items-center leading-[50px] xl:leading-[55px]">
                     Competition Solutions
                   </span>
@@ -38,14 +45,19 @@ export default function CardSide() {
             <div className="w-full flex flex-col">
               <div className="flex flex-col w-full lg:max-w-full 2xl:max-w-2xl gap-y-8 lg:gap-y-10 xl:gap-y-12 2xl:gap-y-14">
                 <div className="flex flex-col gap-y-8">
-                  <h1 className="font-bold text-blue-950 text-4xl">A Stronger World</h1>
-                  <p className="text-blue-950 text-xl font-medium leading-normal">
+                  <h1 style={textStyle} className="font-bold text-4xl">
+                    A Stronger World
+                  </h1>
+                  <p style={textStyle} className="text-xl font-medium leading-normal">
                     We aim to have a positive impact by reducing our environmental footprint and helping build stronger
                     people and communities.
                   </p>
                 </div>
                 <div className="flex flex-wrap items-center mt-[-10px]">
-                  <a className="no-underline  cursor-pointer transition duration-200 font-semibold rounded-full text-center xl:px-9 text-[13px] xl:text-[15px] hover:bg-opacity-85 text-white bg-blue-950">
+                  <a
+                    style={mainStyle}
+                    className="no-underline  cursor-pointer transition duration-200 font-semibold rounded-full text-center xl:px-9 text-[13px] xl:text-[15px] hover:bg-opacity-85 text-white bg-blue-950"
+                  >
                     <span className="inline-flex items-center leading-[50px] xl:leading-[55px]">Learn More</span>
                   </a>
                 </div>
