@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import { mainStyle, textStyle } from "../headerSection/HeaderSection";
+import { secondaryStyle, textStyle } from "../headerSection/HeaderSection";
 
 export default function Footer() {
   return (
     <>
-      <div className="relative w-full flex px-6 md:px-14 lg:px-20 flex-col py-20" style={mainStyle}>
+      <div className="relative w-full flex px-6 md:px-14 lg:px-20 flex-col py-20" style={secondaryStyle}>
         <div className="flex flex-wrap justify-between gap-12 lg:gap-x-14">
           <div className="flex">
             <div className="flex flex-wrap items-start flex-1 gap-12 lg:gap-x-14">

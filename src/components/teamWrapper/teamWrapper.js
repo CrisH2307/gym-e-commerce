@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import { Keyboard, Scrollbar, Navigation, Pagination } from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import teamData from "../../data/teamMembers";
+import teamData from "../../../data/teamMembers";
 
 export default function TeamWrapper() {
   const swiperRef = useRef(null);

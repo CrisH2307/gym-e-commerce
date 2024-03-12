@@ -2,13 +2,14 @@ import React from "react";
 import "./Item.css";
 import Image from "next/image";
 import { textStyle } from "../headerSection/HeaderSection";
+import Link from "next/link";
 export default function Item(props) {
   return (
     <>
       <div className="item relative flex flex-col w-full flex-1 justify-center overflow-x-hidden pr-7 mx-6 md:mx-14 lg:mx-20 mb-8 md:mb-12 lg:mb-20">
         <div className="flex relative overflow-hidden">
           <div className="relative overflow-hidden">
-            <Image src={props.image} alt="" />
+            <Image src={props.image} alt="" href={`equipment/${props.id}`} />
           </div>
         </div>
         <div className="mt-4">

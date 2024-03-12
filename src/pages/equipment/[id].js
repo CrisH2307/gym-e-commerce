@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import equipmentDetail from "../../components/equipmentDetail/equipmentDetail";
 
 export default function equipmentDetailbyID(params) {
   const router = useRouter();
@@ -6,7 +7,7 @@ export default function equipmentDetailbyID(params) {
 
   return (
     <div>
-      <equipmentDetailbyID id={id} />
+      <equipmentDetail id={id} />
     </div>
   );
 }

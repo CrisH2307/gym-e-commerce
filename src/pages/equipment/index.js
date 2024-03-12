@@ -1,13 +1,13 @@
-import Header from "../../../components/header/Header";
-import { mainStyle, secondaryStyle, textStyle } from "../../../components/headerSection/HeaderSection";
-import Navbar from "../../../components/navbar/Navbar";
+import Header from "../../components/header/Header";
+import { mainStyle, secondaryStyle, textStyle } from "../../components/headerSection/HeaderSection";
+import Navbar from "../../components/navbar/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../app/globals.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpWideShort } from "@fortawesome/free-solid-svg-icons";
-import data_product from "../../../components/Assets/data";
-import Item from "../../../components/Item/Item";
-import Footer from "../../../components/footer/Footer";
+import data_product from "../../components/Assets/data";
+import Item from "@/components/Item/Item";
+import Footer from "@/components/footer/Footer";
 
 export default function Equipments() {
   return (
@@ -35,7 +35,7 @@ export default function Equipments() {
         </div>
       </div>
       <div className="flex flex-col w-full px-6 mt-24">
-        <div className="grid grid-cols-2 items-start">
+        <div className="grid items-start" style={{ gridTemplateColumns: "repeat(auto-fill, 430px)" }}>
           {data_product.map((item, i) => (
             <Item
               key={i}
@@ -51,12 +51,12 @@ export default function Equipments() {
           ))}
         </div>
       </div>
-      <div style={mainStyle} className="py-10">
-        <div className="relative w-full flex px-20 flex-col">
+      <div style={mainStyle} className="py-20">
+        <div className="relative w-full flex px-20 flex-col justify-center items-center">
           <div className="flex flex-1">
-            <div className="relative w-full px-20 mx-auto flex-col">
-              <div className=" max-w-prose">
-                <p className="font-semibold text-base max-w-none leading-7">
+            <div className="relative w-full px-20 flex-col max-w-5xl mx-auto">
+              <div className="max-w-5xl">
+                <p className=" font-semibold text-xl max-w-none leading-9">
                   Eleiko designs and manufactures precision-crafted strength products for the world's leading
                   competitions, commercial facilities and home gyms. We offer a wide range of barbells, weightlifting
                   and powerlifting plates, bumper plates, dumbbells, kettlebells, racks, rigs, and platforms – fitness
