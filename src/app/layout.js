@@ -1,6 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import Header from "@/components/header/Header";
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +18,12 @@ export default function RootLayout({ children }) {
       <Head>
         <link href="https://fonts.cdnfonts.com/css/d-din" rel="stylesheet" />
       </Head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

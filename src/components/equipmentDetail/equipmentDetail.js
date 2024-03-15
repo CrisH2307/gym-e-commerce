@@ -1,20 +1,14 @@
+import Image from "next/image";
 import React from "react";
-import data_product from "./data";
 
-export default function EquipmentDetail({ id }) {
-  // Find the equipment with the matching id
-  const selectedEquipment = data_product.find((item) => item.id === parseInt(id));
-
+export default function EquipmentDetailbyID({ equipment }) {
+  if (!equipment) {
+    return <div>No equipment found.</div>;
+  }
   return (
     <div>
-      {selectedEquipment && (
-        <div>
-          <h2>{selectedEquipment.name}</h2>
-          <p>Description: {selectedEquipment.des}</p>
-          <p>New Price: ${selectedEquipment.new_price}</p>
-          <p>Old Price: ${selectedEquipment.old_price}</p>
-        </div>
-      )}
+      <h1>Hello</h1>
+      <h2>{equipment.name}</h2>
     </div>
   );
 }

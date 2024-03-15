@@ -1,13 +1,27 @@
+import EquipmentDetailbyID from "@/components/equipmentDetail/equipmentDetail";
 import { useRouter } from "next/router";
-import equipmentDetail from "../../components/equipmentDetail/equipmentDetail";
+import equipmentData from "@/components/Assets/data";
 
-export default function equipmentDetailbyID(params) {
+export default function eachEquipment({ equipment }) {
   const router = useRouter();
   const { id } = router.query;
 
   return (
     <div>
-      <equipmentDetail id={id} />
+      <EquipmentDetailbyID equipment={equipment} />
     </div>
   );
+}
+
+export async function getServerSideProps(context) {
+  const { params } = context;
+  const { id } = params;
+
+  const equipment = equipmentData.find((item) => String(item.id) === id);
+
+  return {
+    props: {
+      equipment,
+    },
+  };
 }
