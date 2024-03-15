@@ -13,7 +13,14 @@ export default function eachEquipment({ equipment }) {
   );
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticPaths() {
+  const paths = equipmentData.map((equipment) => ({
+    params: { id: String(equipment.id) },
+  }));
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps(context) {
   const { params } = context;
   const { id } = params;
 
