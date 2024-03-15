@@ -7,8 +7,8 @@ export default function HwwMenuDropdown() {
         className="flex flex-col bg-blue-950 mb-10"
         style={{
           ...mainStyle,
-          height: "100vh",
-          width: "120vw",
+          height: "80vh",
+          width: "145vw",
           left: "50%",
           transform: "translateX(-29.42%)",
         }}
@@ -18,18 +18,32 @@ export default function HwwMenuDropdown() {
             <div className="flex pt-20 pl-20">
               <div className="flex flex-wrap items-start flex-1 gap-x-80 space-x-60 lg:gap-x-14">
                 <div className="">
-                  <h3 className="text-xl lg:text-h-lg xl:text-h-xl font-bold text-white underline">Who we are</h3>
+                  <h3 className="text-xl lg:text-h-lg xl:text-h-xl font-bold text-white underline">
+                    Who we are
+                  </h3>
                   <div role="list" className="mt-3 space-y-1">
-                    <div className="block font-bold text-lg text-white">Out Purpose</div>
-                    <div className="block font-bold text-lg text-white">Our Story</div>
+                    <div className="block font-bold text-lg text-white">
+                      Out Purpose
+                    </div>
+                    <div className="block font-bold text-lg text-white">
+                      Our Story
+                    </div>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl lg:text-h-lg xl:text-h-xl font-bold text-white underline">Who we serve</h3>
+                  <h3 className="text-xl lg:text-h-lg xl:text-h-xl font-bold text-white underline">
+                    Who we serve
+                  </h3>
                   <div className="mt-3 space-y-1">
-                    <div className="block font-bold text-lg text-white">Competition</div>
-                    <div className="block font-bold text-lg text-white">Facility</div>
-                    <div className="block font-bold text-lg text-white">Home</div>
+                    <div className="block font-bold text-lg text-white">
+                      Competition
+                    </div>
+                    <div className="block font-bold text-lg text-white">
+                      Facility
+                    </div>
+                    <div className="block font-bold text-lg text-white">
+                      Home
+                    </div>
                   </div>
                 </div>
               </div>

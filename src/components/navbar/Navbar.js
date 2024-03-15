@@ -1,12 +1,17 @@
 "use client";
-import { faBars, faCartShopping, faMagnifyingGlass, faTableList, faX } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faCartShopping,
+  faMagnifyingGlass,
+  faTableList,
+  faX,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { useState } from "react";
 import EquipmentMenuDropdown from "./equipmentMenuDropdown/equipmentMenu";
 import GearMenuDropdown from "./gearMenuDropdown/gearMenu";
 import HwwMenuDropdown from "./hwwMenuDropdown/hwwMenu";
-
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [hoveredItems, setHoveredItems] = useState(Array(5).fill(false));
@@ -39,7 +44,11 @@ export default function Navbar() {
                   className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
-                  {navbar ? <FontAwesomeIcon icon={faX} /> : <FontAwesomeIcon icon={faBars} />}
+                  {navbar ? (
+                    <FontAwesomeIcon icon={faX} />
+                  ) : (
+                    <FontAwesomeIcon icon={faBars} />
+                  )}
                 </button>
               </div>
             </div>
@@ -54,10 +63,14 @@ export default function Navbar() {
               <ul className="h-screen md:h-auto items-center justify-center md:flex">
                 <li
                   className={`relative pt-10 text-sm pb-10 px-3 text-center delay-300 transition-all duration-300 ease-in-out ${
-                    hoveredItems[0] ? "border-b-3 border-blue-950" : "border-b-3 border-transparent"
+                    hoveredItems[0]
+                      ? "border-b-3 border-blue-950"
+                      : "border-b-3 border-transparent"
                   }`}
                   style={{
-                    borderBottom: hoveredItems[0] ? "3px solid blue" : "3px solid transparent",
+                    borderBottom: hoveredItems[0]
+                      ? "3px solid blue"
+                      : "3px solid transparent",
                     transition: "border-color 0.3s ease",
                   }}
                   onMouseEnter={() => handleMouseEnter(0)}
@@ -75,13 +88,19 @@ export default function Navbar() {
                 <li
                   className={`relative pt-10 text-sm pb-10 px-3 text-center`}
                   style={{
-                    borderBottom: hoveredItems[1] ? "3px solid blue" : "3px solid transparent",
+                    borderBottom: hoveredItems[1]
+                      ? "3px solid blue"
+                      : "3px solid transparent",
                     transition: "border-color 0.3s ease",
                   }}
                   onMouseEnter={() => handleMouseEnter(1)}
                   onMouseLeave={() => handleMouseLeave(1)}
                 >
-                  <Link className="no-underline font-bold text-white" href="/gear" onClick={() => setNavbar(!navbar)}>
+                  <Link
+                    className="no-underline font-bold text-white"
+                    href="/gear"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     Gear
                   </Link>
                   {hoveredItems[1] && <GearMenuDropdown />}
@@ -89,7 +108,9 @@ export default function Navbar() {
                 <li
                   className={`pt-10 text-sm pb-10 px-3 text-center`}
                   style={{
-                    borderBottom: hoveredItems[2] ? "3px solid blue" : "3px solid transparent",
+                    borderBottom: hoveredItems[2]
+                      ? "3px solid blue"
+                      : "3px solid transparent",
                     transition: "border-color 0.3s ease",
                   }}
                   onMouseEnter={() => handleMouseEnter(2)}
@@ -106,7 +127,9 @@ export default function Navbar() {
                 <li
                   className={`pt-10 text-sm pb-10 px-3 text-center`}
                   style={{
-                    borderBottom: hoveredItems[3] ? "3px solid blue" : "3px solid transparent",
+                    borderBottom: hoveredItems[3]
+                      ? "3px solid blue"
+                      : "3px solid transparent",
                     transition: "border-color 0.3s ease",
                   }}
                   onMouseEnter={() => handleMouseEnter(3)}
@@ -123,13 +146,19 @@ export default function Navbar() {
                 <li
                   className={`relative pt-10 text-sm pb-10 px-3 text-center`}
                   style={{
-                    borderBottom: hoveredItems[4] ? "3px solid blue" : "3px solid transparent",
+                    borderBottom: hoveredItems[4]
+                      ? "3px solid blue"
+                      : "3px solid transparent",
                     transition: "border-color 0.3s ease",
                   }}
                   onMouseEnter={() => handleMouseEnter(4)}
                   onMouseLeave={() => handleMouseLeave(4)}
                 >
-                  <Link className="no-underline font-bold text-white" href="/about" onClick={() => setNavbar(!navbar)}>
+                  <Link
+                    className="no-underline font-bold text-white"
+                    href="/work"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     How we work
                   </Link>
                   {hoveredItems[4] && <HwwMenuDropdown />}
@@ -146,30 +175,48 @@ export default function Navbar() {
           >
             <ul className="h-screen md:h-auto items-end justify-end md:flex">
               <li className="pb-6 text-sm py-1 px-3 text-center">
-                <Link
-                  className="no-underline font-bold text-white justify-end border-b-4 border-white"
-                  style={{
-                    transition: hoveredItems[0] ? "border-color 0.4 ease" : "3px solid blue",
-                  }}
-                  href="/equipment"
-                  onClick={() => setNavbar(navbar)}
-                >
-                  Design Service
+                <Link href="/design-service">
+                  <span
+                    className="no-underline font-bold text-white justify-end border-b-4 border-white"
+                    style={{
+                      transition: hoveredItems[0]
+                        ? "border-color 0.4 ease"
+                        : "3px solid blue",
+                    }}
+                    onClick={() => setNavbar(navbar)}
+                  >
+                    Design Service
+                  </span>
                 </Link>
               </li>
               <li className="pb-6 text-sm py-1 px-3 text-center">
-                <Link className="font-bold text-white justify-end" href="/equipment" onClick={() => setNavbar(navbar)}>
-                  <FontAwesomeIcon icon={faMagnifyingGlass} />
+                <Link href="/search">
+                  <span
+                    className="font-bold text-white justify-end"
+                    onClick={() => setShowSearchBar(true)}
+                  >
+                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                  </span>
                 </Link>
               </li>
               <li className="pb-6 text-sm py-1 px-3 text-center">
-                <Link className="font-bold text-white justify-end" href="/equipment" onClick={() => setNavbar(navbar)}>
-                  <FontAwesomeIcon icon={faTableList} />
+                <Link href="/equipment">
+                  <span
+                    className="font-bold text-white justify-end"
+                    onClick={() => setNavbar(navbar)}
+                  >
+                    <FontAwesomeIcon icon={faTableList} />
+                  </span>
                 </Link>
               </li>
               <li className="pb-6 text-sm py-1 px-3 text-center">
-                <Link className="font-bold text-white justify-end" href="/equipment" onClick={() => setNavbar(navbar)}>
-                  <FontAwesomeIcon icon={faCartShopping} />{" "}
+                <Link href="/equipment">
+                  <span
+                    className="font-bold text-white justify-end"
+                    onClick={() => setNavbar(navbar)}
+                  >
+                    <FontAwesomeIcon icon={faCartShopping} />{" "}
+                  </span>
                 </Link>
               </li>
             </ul>
