@@ -130,7 +130,7 @@ export default function Navbar() {
                   onMouseEnter={() => handleMouseEnter(4)}
                   onMouseLeave={() => handleMouseLeave(4)}
                 >
-                  <Link className="no-underline font-bold text-white" href="/about" onClick={() => setNavbar(!navbar)}>
+                  <Link className="no-underline font-bold text-white" href="/work" onClick={() => setNavbar(!navbar)}>
                     How we work
                   </Link>
                   {hoveredItems[4] && <HwwMenuDropdown />}
@@ -147,30 +147,37 @@ export default function Navbar() {
           >
             <ul className="h-screen md:h-auto items-end justify-end md:flex">
               <li className="pb-6 text-sm py-1 px-3 text-center">
-                <Link
-                  className="no-underline font-bold text-white justify-end border-b-4 border-white"
-                  style={{
-                    transition: hoveredItems[0] ? "border-color 0.4 ease" : "3px solid blue",
-                  }}
-                  href="/equipment"
-                  onClick={() => setNavbar(navbar)}
-                >
-                  Design Service
+                <Link href="/design-service">
+                  <span
+                    className="no-underline font-bold text-white justify-end border-b-4 border-white"
+                    style={{
+                      transition: hoveredItems[0] ? "border-color 0.4 ease" : "3px solid blue",
+                    }}
+                    onClick={() => setNavbar(navbar)}
+                  >
+                    Design Service
+                  </span>
                 </Link>
               </li>
               <li className="pb-6 text-sm py-1 px-3 text-center">
-                <Link className="font-bold text-white justify-end" href="/equipment" onClick={() => setNavbar(navbar)}>
-                  <FontAwesomeIcon icon={faMagnifyingGlass} />
+                <Link href="/search">
+                  <span className="font-bold text-white justify-end" onClick={() => setShowSearchBar(true)}>
+                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                  </span>
                 </Link>
               </li>
               <li className="pb-6 text-sm py-1 px-3 text-center">
-                <Link className="font-bold text-white justify-end" href="/equipment" onClick={() => setNavbar(navbar)}>
-                  <FontAwesomeIcon icon={faTableList} />
+                <Link href="/equipment">
+                  <span className="font-bold text-white justify-end" onClick={() => setNavbar(navbar)}>
+                    <FontAwesomeIcon icon={faTableList} />
+                  </span>
                 </Link>
               </li>
               <li className="pb-6 text-sm py-1 px-3 text-center">
-                <Link className="font-bold text-white justify-end" href="/equipment" onClick={() => setNavbar(navbar)}>
-                  <FontAwesomeIcon icon={faCartShopping} />{" "}
+                <Link href="/equipment">
+                  <span className="font-bold text-white justify-end" onClick={() => setNavbar(navbar)}>
+                    <FontAwesomeIcon icon={faCartShopping} />{" "}
+                  </span>
                 </Link>
               </li>
             </ul>

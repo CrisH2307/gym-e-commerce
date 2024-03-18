@@ -14,7 +14,7 @@ export default function Equipments() {
     <div>
       <Header />
       <Navbar />
-      <div style={secondaryStyle} className="relative flex flex-col md:h-[calc(30vh-48px)] lg:h-[calc(49vh-48px)]">
+      <div style={secondaryStyle} className="relative flex flex-col md:h-[calc(30vh-48px)] lg:h-[calc(60vh-48px)]">
         <div className="relative pb-14 pt-52">
           <div className="relative w-full flex px-20 flex-col">
             <div className="flex flex-col flex-wrap items-start justify-between gap-x-10 gap-y-8">
