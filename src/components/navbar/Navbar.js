@@ -6,6 +6,7 @@ import { useState } from "react";
 import EquipmentMenuDropdown from "./equipmentMenuDropdown/equipmentMenu";
 import GearMenuDropdown from "./gearMenuDropdown/gearMenu";
 import HwwMenuDropdown from "./hwwMenuDropdown/hwwMenu";
+import { textStyle } from "../headerSection/HeaderSection";
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);

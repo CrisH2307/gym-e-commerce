@@ -56,7 +56,7 @@ export default function Equipments() {
           <div className="flex flex-1">
             <div className="relative w-full px-20 flex-col max-w-5xl mx-auto">
               <div className="max-w-5xl">
-                <p className=" font-semibold text-xl max-w-none leading-9">
+                <p className="font-semibold text-xl max-w-none leading-9">
                   Eleiko designs and manufactures precision-crafted strength products for the world's leading
                   competitions, commercial facilities and home gyms. We offer a wide range of barbells, weightlifting
                   and powerlifting plates, bumper plates, dumbbells, kettlebells, racks, rigs, and platforms – fitness
