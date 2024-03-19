@@ -14,7 +14,9 @@ export default function Popular() {
   return (
     <div className="border-0">
       <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-3 ml-12 mt-16 p-7">
-        <h1 className="text-cyan-950 font-bold text-4xl my-10">Popular Products</h1>
+        <h1 className="text-cyan-950 font-bold text-4xl my-10">
+          Popular Products
+        </h1>
         <a className="font-medium text-md hover:no-underline hover:delay-300ms inline-flex items-end">
           <span className="inline-block text-blue-950 transition-all duration-300 no-underline hover:border-transparent">
             View All
