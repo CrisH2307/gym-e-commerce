@@ -5,7 +5,7 @@ import { secondaryStyle, textStyle } from "../headerSection/HeaderSection";
 export default function Footer() {
   return (
     <>
-      <div className="relative w-full flex px-6 md:px-14 lg:px-20 flex-col py-20" style={secondaryStyle}>
+      <div className="relative w-full flex px-12 md:px-14 lg:px-28 flex-col py-20" style={secondaryStyle}>
         <div className="flex flex-wrap justify-between gap-12 lg:gap-x-14">
           <div className="flex">
             <div className="flex flex-wrap items-start flex-1 gap-12 lg:gap-x-14">
