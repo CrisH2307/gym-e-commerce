@@ -1,17 +1,35 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import { mainStyle } from "../headerSection/HeaderSection";
 
 export default function Header() {
+  const headings = [
+    "Free Shipping on Apparel & Gear orders over $75",
+    "Shop online or work with sales to design your gym",
+    "Contact sales team for commercial quotes",
+  ];
+  const [i, setI] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setI((prevI) => (prevI + 1) % headings.length);
+    }, 4000);
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <>
-      <div style={mainStyle} className="relative z-50 h-12 flex items-center w-full overflow-hidden">
+      <div
+        style={mainStyle}
+        className="relative z-50 h-12 flex items-center w-full overflow-hidden"
+      >
         <div className="hidden h-full md:flex">
           <div className="relative w-full flex px-6 md:px-14 lg:px-20 flex-col flex-1">
             <div className="flex justify-end flex-1">
               <div className="z-20 flex">
                 <div className="w-10 bg-gradient-to-l from-primary-dark"></div>
                 <div className="flex items-center bg-primary-dark">
-                  <a className="flex self-center space-x-2 text-sm font-bold tracking-wide text-white hover:underline">
+                  <a className="flex self-center space-x-2 text-sm font-bold tracking-wide text-white hover:underline no-underline ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -23,6 +41,7 @@ export default function Header() {
                       <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"></path>
                     </svg>
                     <span>Contact Us</span>
+                    <span class="font-sans">{headings[i]}</span>
                   </a>
                 </div>
               </div>
