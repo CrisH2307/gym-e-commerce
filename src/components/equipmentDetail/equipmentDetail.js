@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../header/Header";
 import Navbar from "../navbar/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -8,27 +8,42 @@ import { mainStyle, secondaryStyle, textStyle } from "../headerSection/HeaderSec
 import Image from "next/image";
 import { Rating } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
+import { Breadcrumbs } from "@mui/material";
 
 export default function EquipmentDetailbyID({ equipment }) {
+  const [numProducts, setNumProducts] = useState(1);
+
+  const increaseNumProduct = (e) => {
+    setNumProducts(numProducts + 1);
+  };
+
+  const decreaseNumProduct = (e) => {
+    if (numProducts > 1) {
+      setNumProducts(numProducts - 1);
+    }
+  };
+
   return (
     <div>
       <Header />
       <div style={secondaryStyle}>
         <Navbar />
       </div>
-      <div className="mt-24 relative">
+      <div className="my-24 relative">
         <div className="relative flex flex-col">
           <div className="w-full mb-4 absolute top-0 left-0 z-10">
             <div className="relative w-full flex px-20 flex-col">
               <div className="flex justify-end whitespace-nowrap">
                 <div className="flex gap-x-2 items-end">
-                  <a className="h-[48px] lg:h-auto -my-4 lg:my-0 flex items-center font-bold text-xs md:text-sm hover:underline last:truncate ">
+                  <a className="h-[48px] lg:h-auto -my-4 lg:my-0 flex items-center font-bold text-md hover:underline last:truncate ">
                     Equipment
                   </a>
-                  <a className="h-[48px] lg:h-auto -my-4 lg:my-0 flex items-center font-bold text-xs md:text-sm hover:underline last:truncate ">
+                  <a>{">"}</a>
+                  <a className="h-[48px] lg:h-auto -my-4 lg:my-0 flex items-center font-bold text-md hover:underline last:truncate ">
                     Special Offer
                   </a>
-                  <a className="h-[48px] lg:h-auto -my-4 lg:my-0 flex items-center font-bold text-xs md:text-sm hover:underline last:truncate ">
+                  <a>{">"}</a>
+                  <a className="h-[48px] lg:h-auto -my-4 lg:my-0 flex items-center font-bold text-md hover:underline last:truncate ">
                     Used
                   </a>
                 </div>
@@ -43,7 +58,7 @@ export default function EquipmentDetailbyID({ equipment }) {
                     <div className="">
                       <Image src={equipment.image} className="w-full"></Image>
                       <div className="my-4 px-6">
-                        <div className="font-medium text-sm" style={textStyle}>
+                        <div className="font-medium text-lg" style={textStyle}>
                           Product visuals are renderings and do not reflect the used condition.
                         </div>
                       </div>
@@ -64,7 +79,7 @@ export default function EquipmentDetailbyID({ equipment }) {
                         </span>
                       </h1>
                     </div>
-                    <div className="" style={textStyle}>
+                    <div className="my-16" style={textStyle}>
                       <p className="mt-8 font-medium text-xl lg:leading-normal max-w-xl ">
                         This is a used product. It is a fully functional product that has cosmetic damage from shipping
                         or from being used in events and competitions or from a customer sending it back due to regret.
@@ -111,6 +126,7 @@ export default function EquipmentDetailbyID({ equipment }) {
                         <div className="flex flex-wrap gap-4 items-center w-full sm:w-auto">
                           <div className="flex justify-center items-center">
                             <button
+                              onClick={decreaseNumProduct}
                               className="outline-none flex-shrink-0 w-5 h-5 font-bold rounded-full flex items-center justify-center"
                               style={mainStyle}
                               aria-label="Remove"
@@ -129,8 +145,9 @@ export default function EquipmentDetailbyID({ equipment }) {
                                 ></path>
                               </svg>
                             </button>
-                            <div className="select-none text-center w-8 font-bold text-base ">1</div>
+                            <div className="select-none text-center w-8 font-bold text-base ">{numProducts}</div>
                             <button
+                              onClick={increaseNumProduct}
                               className="outline-none flex-shrink-0 w-5 h-5 font-bold rounded-full flex items-center justify-center"
                               style={mainStyle}
                               aria-label="Add"
@@ -150,7 +167,7 @@ export default function EquipmentDetailbyID({ equipment }) {
                             className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle px-7 xl:px-8 text-[15px] border-transparent hover:opacity-75 text-white flex-grow sm:flex-none"
                             style={mainStyle}
                           >
-                            <span className="inline-flex gap-x-2 items-center leading-[38px] xl:leading-[48px] mt-[-2px]">
+                            <span className="inline-flex gap-x-2 items-center leading-[38px] xl:leading-[48px] mt-[2px]">
                               Add to Cart
                             </span>
                           </button>
@@ -158,7 +175,7 @@ export default function EquipmentDetailbyID({ equipment }) {
                             id="addToQuoteButton"
                             className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle px-7 xl:px-8 text-[15px] bg-transparent hover:opacity-75 border-cyan-950  flex-grow sm:flex-none"
                           >
-                            <span className="inline-flex gap-x-2 items-center leading-[38px] xl:leading-[48px] mt-[-2px]">
+                            <span className="inline-flex gap-x-2 items-center leading-[38px] xl:leading-[48px] mt-[2px]">
                               Add to Quote
                             </span>
                           </button>
@@ -236,70 +253,60 @@ export default function EquipmentDetailbyID({ equipment }) {
           </div>
         </div>
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <div style={mainStyle} className="py-20">
         <div className="relative w-full flex px-20 flex-col justify-center items-center">
-          <div className="flex flex-1">
-            <div className="relative w-full px-10 flex-col flex-1 justify-center">
-              <div className="grid grid-cols-12 gap-x-5">
-                <div className="col-span-3">
-                  <h2 className="font-bold text-h-xl text-white">Feature</h2>
+          <div className="relative w-full px-10 flex-col flex-1 justify-center">
+            <div className="grid grid-cols-12 gap-x-5">
+              <div className="col-span-3">
+                <h2 className="font-bold text-h-xl text-white">Feature</h2>
+              </div>
+              <div className="gap-y-8 grid grid-cols-1 gap-x-8 mt-8 col-span-8">
+                <div className="">
+                  <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
+                    <div className="flex flex-col gap-y-2">
+                      <h2 className="flex font-bold text-white">Designed For</h2>
+                      <p className="font-medium text-xl text-white">
+                        Strength training and functional fitness in mixed use environments
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="gap-y-8 grid grid-cols-1 gap-x-8 mt-8 col-span-8">
-                  <div className="">
-                    <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
-                      <h2 className="flex flex-col gap-y-2 text-xl">
-                        <p className="flex font-bold text-white">Designed For</p>
-                        <p className="font-medium text-xl text-white">
-                          Strength training and functional fitness in mixed use environments
-                        </p>
-                      </h2>
+                <div className="">
+                  <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
+                    <div className="flex flex-col gap-y-2 ">
+                      <h2 className="flex font-bold text-white">Smaller Increases</h2>
+                      <p className="font-medium text-xl text-white">
+                        Plates range from 1,25 – 5 kg for small increment adjustments
+                      </p>
                     </div>
                   </div>
-                  <div className="">
-                    <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
-                      <h2 className="flex flex-col gap-y-2 text-xl">
-                        <p className="flex font-bold text-white">Smaller Increases</p>
-                        <p className="font-medium text-xl text-white">
-                          Plates range from 1,25 – 5 kg for small increment adjustments
-                        </p>
-                      </h2>
+                </div>
+                <div className="">
+                  <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
+                    <div className="flex flex-col gap-y-2 ">
+                      <h2 className="flex font-bold text-white">Minimalistic Design</h2>
+                      <p className="font-medium text-xl text-white">
+                        Black matte rubber with white weight markings for easy identification
+                      </p>
                     </div>
                   </div>
-                  <div className="">
-                    <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
-                      <h2 className="flex flex-col gap-y-2 text-xl">
-                        <p className="flex font-bold text-white">Minimalistic Design</p>
-                        <p className="font-medium text-xl text-white">
-                          Black matte rubber with white weight markings for easy identification
-                        </p>
-                      </h2>
+                </div>
+                <div className="">
+                  <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
+                    <div className="flex flex-col gap-y-2 ">
+                      <h2 className="flex font-bold text-white">Lasting Performance</h2>
+                      <p className="font-medium text-xl text-white">Solid steel core coated in durable rubber</p>
                     </div>
                   </div>
-                  <div className="">
-                    <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
-                      <h2 className="flex flex-col gap-y-2 text-xl">
-                        <p className="flex font-bold text-white">Lasting Performance</p>
-                        <p className="font-medium text-xl text-white">Solid steel core coated in durable rubber</p>
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="">
-                    <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
-                      <h2 className="flex flex-col gap-y-2 text-xl">
-                        <p className="flex font-bold text-white">Nestable and Compact</p>
-                        <p className="font-medium text-xl text-white">
-                          Snug and secure fit that takes less that space on the sleeve and provides stability when
-                          plates are loaded
-                        </p>
-                      </h2>
+                </div>
+                <div className="">
+                  <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
+                    <div className="flex flex-col gap-y-2 ">
+                      <h2 className="flex font-bold text-white">Nestable and Compact</h2>
+                      <p className="font-medium text-xl text-white">
+                        Snug and secure fit that takes less that space on the sleeve and provides stability when plates
+                        are loaded
+                      </p>
                     </div>
                   </div>
                 </div>
