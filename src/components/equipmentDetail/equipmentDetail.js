@@ -59,7 +59,17 @@ export default function EquipmentDetailbyID({ equipment }) {
                 <div className="sticky top-0">
                   <div className="flex-1 max-w-3xl w-[1076px]">
                     <div className="">
-                      <Image src={equipment.image} className="w-full"></Image>
+                      <Image
+                        src={equipment.image}
+                        className="w-full"
+                        style={{ transition: "0.2s" }}
+                        onMouseOver={(e) => {
+                          e.target.style.transform = "scale(1.05)";
+                        }}
+                        onMouseOut={(e) => {
+                          e.target.style.transform = "scale(1.0)";
+                        }}
+                      ></Image>
                       <div className="my-4 px-6">
                         <div className="font-medium text-lg" style={textStyle}>
                           Product visuals are renderings and do not reflect the used condition.
