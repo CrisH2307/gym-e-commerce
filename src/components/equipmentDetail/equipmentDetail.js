@@ -4,11 +4,21 @@ import Navbar from "../navbar/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../app/globals.css";
 import Footer from "../footer/Footer";
-import { mainStyle, secondaryStyle, textStyle } from "../headerSection/HeaderSection";
+import {
+  mainStyle,
+  secondaryStyle,
+  textStyle,
+} from "../headerSection/HeaderSection";
 import Image from "next/image";
 import { Rating } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
-import { faCircleMinus, faCirclePlus, faList, faSheetPlastic, faSquarePlus } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCircleMinus,
+  faCirclePlus,
+  faList,
+  faSheetPlastic,
+  faSquarePlus,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function EquipmentDetailbyID({ equipment }) {
@@ -70,7 +80,8 @@ export default function EquipmentDetailbyID({ equipment }) {
                       ></Image>
                       <div className="my-4 px-6">
                         <div className="font-medium text-lg" style={textStyle}>
-                          Product visuals are renderings and do not reflect the used condition.
+                          Product visuals are renderings and do not reflect the
+                          used condition.
                         </div>
                       </div>
                     </div>
@@ -83,10 +94,16 @@ export default function EquipmentDetailbyID({ equipment }) {
                   <div className="sticky top-0">
                     <div className="">
                       <h1>
-                        <span className="font-bold text-4xl max-w-lg" style={textStyle}>
+                        <span
+                          className="font-bold text-4xl max-w-lg"
+                          style={textStyle}
+                        >
                           {equipment.name}
                         </span>
-                        <span className="mt-1 block font-medium text-lg" style={textStyle}>
+                        <span
+                          className="mt-1 block font-medium text-lg"
+                          style={textStyle}
+                        >
                           5kg, USED
                         </span>
                       </h1>
@@ -95,14 +112,21 @@ export default function EquipmentDetailbyID({ equipment }) {
                     {/* Item Description */}
                     <div className="my-16" style={textStyle}>
                       <p className="mt-8 font-medium text-xl lg:leading-normal max-w-xl ">
-                        This is a used product. It is a fully functional product that has cosmetic damage from shipping
-                        or from being used in events and competitions or from a customer sending it back due to regret.
-                        It is in good working order but may show signs of wear. Eleiko Rubber Coated Change Plates
-                        support smaller increases and manageable weight jumps when training. Consisting of a solid steel
-                        core that is rubber coated, the change plates feature a minimalistic design with no center hub.
-                        The plates have raised edges for easier handling and a snug, secure fit that takes less space on
-                        the sleeve when plates are loaded. The black matte finish with white weight markings provides
-                        easy weight identification. The change plates range from 1,25 to 5 kg and are sold individually.
+                        This is a used product. It is a fully functional product
+                        that has cosmetic damage from shipping or from being
+                        used in events and competitions or from a customer
+                        sending it back due to regret. It is in good working
+                        order but may show signs of wear. Eleiko Rubber Coated
+                        Change Plates support smaller increases and manageable
+                        weight jumps when training. Consisting of a solid steel
+                        core that is rubber coated, the change plates feature a
+                        minimalistic design with no center hub. The plates have
+                        raised edges for easier handling and a snug, secure fit
+                        that takes less space on the sleeve when plates are
+                        loaded. The black matte finish with white weight
+                        markings provides easy weight identification. The change
+                        plates range from 1,25 to 5 kg and are sold
+                        individually.
                       </p>
                       <div className="flex flex-wrap gap-x-6 mt-6"></div>
                       <div className="mt-7 flex flex-wrap gap-x-6 items-baseline">
@@ -112,15 +136,28 @@ export default function EquipmentDetailbyID({ equipment }) {
                               Sold individually
                             </div>
                           </div>
-                          <span className="font-medium text-3xl ">${equipment.new_price.toFixed(2)}</span>
+                          <span className="font-medium text-3xl ">
+                            ${equipment.new_price.toFixed(2)}
+                          </span>
                         </div>
                       </div>
                       <div className="mt-9 flex flex-col gap-y-5 lg:max-w-md">
-                        <div id="headlessui-radiogroup-:rk:" role="radiogroup" aria-labelledby="headlessui-label-:rl:">
-                          <h3 className="font-bold text-h-base mb-3 " id="headlessui-label-:rl:" role="none">
+                        <div
+                          id="headlessui-radiogroup-:rk:"
+                          role="radiogroup"
+                          aria-labelledby="headlessui-label-:rl:"
+                        >
+                          <h3
+                            className="font-bold text-h-base mb-3 "
+                            id="headlessui-label-:rl:"
+                            role="none"
+                          >
                             Select Weight
                           </h3>
-                          <div className="flex flex-wrap justify-start gap-3" role="none">
+                          <div
+                            className="flex flex-wrap justify-start gap-3"
+                            role="none"
+                          >
                             <div
                               className="select-none flex flex-shrink-0 items-center justify-center min-w-11 h-11 rounded-full border-solid border-4 font-bold text-sm transition duration-200 cursor-pointer border-transparent px-3 text-white"
                               style={mainStyle}
@@ -144,15 +181,22 @@ export default function EquipmentDetailbyID({ equipment }) {
                               onClick={decreaseNumProduct}
                               className="outline-none flex-shrink-0 w-5 h-5 font-bold rounded-full flex items-center justify-center"
                             >
-                              <FontAwesomeIcon icon={faCircleMinus} className="size-full" />
+                              <FontAwesomeIcon
+                                icon={faCircleMinus}
+                                className="size-full"
+                              />
                             </button>
-                            <div className="select-none text-center w-8 font-bold text-base ">{numProducts}</div>
-                            {/* Increase Button */}
+                            <div className="select-none text-center w-8 font-bold text-base ">
+                              {numProducts}
+                            </div>
                             <button
                               onClick={increaseNumProduct}
                               className="outline-none flex-shrink-0 w-5 h-5 font-bold rounded-full flex items-center justify-center"
                             >
-                              <FontAwesomeIcon icon={faCirclePlus} className="size-full" />
+                              <FontAwesomeIcon
+                                icon={faCirclePlus}
+                                className="size-full"
+                              />
                             </button>
                           </div>
                           <button
@@ -176,17 +220,27 @@ export default function EquipmentDetailbyID({ equipment }) {
 
                       {/* Detail List */}
                       <div className="flex flex-wrap gap-x-6 mt-6">
-                        <button
-                          onClick={(e) => window.scrollTo({ top: 1400, behavior: "smooth" })}
-                          className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold text-[15px] hover:opacity-75 "
-                        >
-                          <FontAwesomeIcon icon={faList} />
+                        <button className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold w-auto text-[15px] hover:opacity-75 ">
+                          <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                            className="w-6 h-6 duration-1000"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M2.625 6.75a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875 0A.75.75 0 018.25 6h12a.75.75 0 010 1.5h-12a.75.75 0 01-.75-.75zM2.625 12a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zM7.5 12a.75.75 0 01.75-.75h12a.75.75 0 010 1.5h-12A.75.75 0 017.5 12zm-4.875 5.25a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875 0a.75.75 0 01.75-.75h12a.75.75 0 010 1.5h-12a.75.75 0 01-.75-.75z"
+                              clipRule="evenodd"
+                            ></path>
+                          </svg>
                           <span className="inline-flex gap-x-2 items-center leading-[38px] xl:leading-[48px] mt-[-2px]">
                             Details
                           </span>
                         </button>
                         <button
-                          onClick={(e) => window.scrollTo({ top: 2100, behavior: "smooth" })}
+                          onClick={(e) =>
+                            window.scrollTo({ top: 2100, behavior: "smooth" })
+                          }
                           className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold text-[15px] hover:opacity-75 "
                         >
                           <FontAwesomeIcon icon={faSheetPlastic} />
@@ -212,8 +266,6 @@ export default function EquipmentDetailbyID({ equipment }) {
           </div>
         </div>
       </div>
-
-      {/* Feature Button */}
       <div style={mainStyle} className="py-20">
         <div className="relative w-full flex px-20 flex-col justify-center items-center">
           <div className="relative w-full px-10 flex-col flex-1 justify-center">
@@ -225,9 +277,12 @@ export default function EquipmentDetailbyID({ equipment }) {
                 <div className="">
                   <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
                     <div className="flex flex-col gap-y-2">
-                      <h2 className="flex font-bold text-white">Designed For</h2>
+                      <h2 className="flex font-bold text-white">
+                        Designed For
+                      </h2>
                       <p className="font-medium text-xl text-white">
-                        Strength training and functional fitness in mixed use environments
+                        Strength training and functional fitness in mixed use
+                        environments
                       </p>
                     </div>
                   </div>
@@ -235,9 +290,12 @@ export default function EquipmentDetailbyID({ equipment }) {
                 <div className="">
                   <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
                     <div className="flex flex-col gap-y-2 ">
-                      <h2 className="flex font-bold text-white">Smaller Increases</h2>
+                      <h2 className="flex font-bold text-white">
+                        Smaller Increases
+                      </h2>
                       <p className="font-medium text-xl text-white">
-                        Plates range from 1,25 – 5 kg for small increment adjustments
+                        Plates range from 1,25 – 5 kg for small increment
+                        adjustments
                       </p>
                     </div>
                   </div>
@@ -245,9 +303,12 @@ export default function EquipmentDetailbyID({ equipment }) {
                 <div className="">
                   <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
                     <div className="flex flex-col gap-y-2 ">
-                      <h2 className="flex font-bold text-white">Minimalistic Design</h2>
+                      <h2 className="flex font-bold text-white">
+                        Minimalistic Design
+                      </h2>
                       <p className="font-medium text-xl text-white">
-                        Black matte rubber with white weight markings for easy identification
+                        Black matte rubber with white weight markings for easy
+                        identification
                       </p>
                     </div>
                   </div>
@@ -255,18 +316,24 @@ export default function EquipmentDetailbyID({ equipment }) {
                 <div className="">
                   <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
                     <div className="flex flex-col gap-y-2 ">
-                      <h2 className="flex font-bold text-white">Lasting Performance</h2>
-                      <p className="font-medium text-xl text-white">Solid steel core coated in durable rubber</p>
+                      <h2 className="flex font-bold text-white">
+                        Lasting Performance
+                      </h2>
+                      <p className="font-medium text-xl text-white">
+                        Solid steel core coated in durable rubber
+                      </p>
                     </div>
                   </div>
                 </div>
                 <div className="">
                   <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
                     <div className="flex flex-col gap-y-2 ">
-                      <h2 className="flex font-bold text-white">Nestable and Compact</h2>
+                      <h2 className="flex font-bold text-white">
+                        Nestable and Compact
+                      </h2>
                       <p className="font-medium text-xl text-white">
-                        Snug and secure fit that takes less that space on the sleeve and provides stability when plates
-                        are loaded
+                        Snug and secure fit that takes less that space on the
+                        sleeve and provides stability when plates are loaded
                       </p>
                     </div>
                   </div>
@@ -293,14 +360,20 @@ export default function EquipmentDetailbyID({ equipment }) {
         <div className="relative w-full flex px-6 md:px-14 lg:px-20 flex-col flex-1 justify-center">
           <div className="relative lg:grid lg:grid-cols-12 lg:gap-x-5">
             <div className="lg:col-span-4 xl:col-span-3">
-              <h2 className="mb-8 lg:mb-0 font-bold text-h-xl lg:text-h-base text-white">Specifications</h2>
+              <h2 className="mb-8 lg:mb-0 font-bold text-h-xl lg:text-h-base text-white">
+                Specifications
+              </h2>
             </div>
             <div className="gap-y-6 grid grid-cols-2 gap-x-8 md:gap-x-8 md:grid-cols-4 sm:gap-y-6 lg:gap-x-5 lg:mt-0 lg:col-span-8 xl:col-span-6">
               <div className="">
                 <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
                   <div className="flex flex-col gap-y-2 text-lg">
-                    <p className="flex font-bold text-white">Unit of measurement</p>
-                    <p className="font-medium text-md text-white">Sold individually</p>
+                    <p className="flex font-bold text-white">
+                      Unit of measurement
+                    </p>
+                    <p className="font-medium text-md text-white">
+                      Sold individually
+                    </p>
                   </div>
                 </div>
               </div>
@@ -308,7 +381,9 @@ export default function EquipmentDetailbyID({ equipment }) {
                 <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
                   <div className="flex flex-col gap-y-2 text-lg">
                     <p className="flex font-bold text-white">Article code</p>
-                    <p className="font-medium text-md text-white">3085308-0050B</p>
+                    <p className="font-medium text-md text-white">
+                      3085308-0050B
+                    </p>
                   </div>
                 </div>
               </div>
@@ -316,7 +391,9 @@ export default function EquipmentDetailbyID({ equipment }) {
                 <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
                   <div className="flex flex-col gap-y-2 text-lg">
                     <p className="flex font-bold text-white">Width</p>
-                    <p className="font-medium text-md text-white">28 mm / 1.1 in.</p>
+                    <p className="font-medium text-md text-white">
+                      28 mm / 1.1 in.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -324,7 +401,9 @@ export default function EquipmentDetailbyID({ equipment }) {
                 <div className="flex flex-col gap-y-3 sm:gap-y-4 pr-5">
                   <div className="flex flex-col gap-y-2 text-lg">
                     <p className="flex font-bold text-white">Weight</p>
-                    <p className="font-medium text-md text-white">5 kg / 11.02 lbs</p>
+                    <p className="font-medium text-md text-white">
+                      5 kg / 11.02 lbs
+                    </p>
                   </div>
                 </div>
               </div>
@@ -354,10 +433,12 @@ export default function EquipmentDetailbyID({ equipment }) {
           </div>
           <div className="w-full flex flex-1 justify-end">
             <p style={textStyle} className="text-2xl leading-9">
-              For used products warranty time goes up to a maximum of 2 years, but never more than corresponding new
-              product. For example, a used XF bar has a warranty of 2 years (12 years for a new XF bar). The SKAI
-              upholstery of a used flat bench has 6 months warranty, as it can't exceed the warranty time of 6 months
-              for a new SKAI upholstery.
+              For used products warranty time goes up to a maximum of 2 years,
+              but never more than corresponding new product. For example, a used
+              XF bar has a warranty of 2 years (12 years for a new XF bar). The
+              SKAI upholstery of a used flat bench has 6 months warranty, as it
+              can't exceed the warranty time of 6 months for a new SKAI
+              upholstery.
             </p>
           </div>
         </div>
@@ -369,7 +450,12 @@ export default function EquipmentDetailbyID({ equipment }) {
           <div className="p-4">
             <p className="text-xl">Be the first to review this item</p>
             <div className="pl-7">
-              <Rating maxRating={5} defaultRating={0} icon="star" size="massive" />
+              <Rating
+                maxRating={5}
+                defaultRating={0}
+                icon="star"
+                size="massive"
+              />
             </div>
           </div>
         </div>
@@ -378,7 +464,9 @@ export default function EquipmentDetailbyID({ equipment }) {
             className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle px-7 text-[13px] border-transparent hover:opacity-75 text-white flex-grow sm:flex-none"
             style={mainStyle}
           >
-            <span className="inline-flex gap-x-2 items-center leading-[37px] mt-[-2px]">Write a Review</span>
+            <span className="inline-flex gap-x-2 items-center leading-[37px] mt-[-2px]">
+              Write a Review
+            </span>
           </button>
         </div>
         <hr />
