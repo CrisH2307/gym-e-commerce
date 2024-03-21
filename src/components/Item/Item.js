@@ -8,7 +8,7 @@ export default function Item(props) {
   return (
     <>
       <Link href={`/equipment/${props.id}`}>
-        <div className="item relative flex flex-col w-full flex-1 justify-center overflow-x-hidden pr-7 mx-6 md:mx-14 lg:mx-20 mb-8 md:mb-12 lg:mb-20">
+        <div className="item relative flex flex-col w-full flex-1 justify-center overflow-x-hidden pr-7 md:mx-14 lg:mx-20 mb-8 md:mb-12 lg:mb-20">
           <div className="flex relative overflow-hidden">
             <div className="relative overflow-hidden">
               <Image src={props.image} alt="" />

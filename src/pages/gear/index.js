@@ -1,7 +1,7 @@
 import Header from "@/components/header/Header";
 import "../../app/globals.css";
 import Navbar from "@/components/navbar/Navbar";
-import { mainStyle, secondaryStyle, textStyle } from "@/components/headerSection/HeaderSection";
+import { secondaryStyle, textStyle } from "@/components/headerSection/HeaderSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpWideShort } from "@fortawesome/free-solid-svg-icons";
 import Footer from "@/components/footer/Footer";
@@ -9,6 +9,8 @@ import LiftingGear from "./LiftingGear";
 import AboutGear from "./About";
 import Apparel from "./Apparel";
 import Accessories from "./Accessories";
+import data_product from "../../components/Assets/data";
+import Item from "@/components/Item/Item";
 
 export default function Gear() {
   return (
@@ -74,6 +76,24 @@ export default function Gear() {
         </a>
       </div>
       <Accessories />
+
+      <div className="flex flex-col w-full px-6 mt-24">
+        <div className="grid items-start" style={{ gridTemplateColumns: "repeat(auto-fill, 430px)" }}>
+          {data_product.map((item, i) => (
+            <Item
+              key={i}
+              id={item.id}
+              name={item.name}
+              image={item.image}
+              new_price={item.new_price}
+              old_price={item.old_price}
+              des={item.des}
+              single_price={item.single_price}
+              className="p-5 text-blue-950 rounded-md shadow-md"
+            />
+          ))}
+        </div>
+      </div>
 
       {/* About Gear */}
       <br />

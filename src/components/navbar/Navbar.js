@@ -29,15 +29,9 @@ export default function Navbar() {
           <div>
             <div className="mx-9 flex py-4 md:py-4 md:block">
               <Link
-<<<<<<< HEAD
                 href="/"
                 className="text-3xl inline-block text-white font-black m-[-1px] whitespace-nowrap no-underline"
                 style={{ letterSpacing: "0.03em", fontStretch: "expanded", fontSize: "2rem", lineHeight: "0.7" }}
-=======
-                className="text-3xl text-white font-black m-[-1px] whitespace-nowrap no-underline"
-                href="/"
-                style={{ clip: "rect(0,0,0,0)" }}
->>>>>>> 5624726e405aa6589e0a8493f774e725ce494fae
               >
                 ELEIKO
               </Link>
@@ -167,14 +161,7 @@ export default function Navbar() {
               </li>
               <li className="pb-6 text-sm py-1 px-3 text-center">
                 <Link href="/search">
-<<<<<<< HEAD
-                  <span className="font-bold text-white justify-end" onClick={() => setShowSearchBar(true)}>
-=======
-                  <span
-                    className="font-bold text-white justify-end"
-                    onClick={() => setNavbar(navbar)}
-                  >
->>>>>>> 5624726e405aa6589e0a8493f774e725ce494fae
+                  <span className="font-bold text-white justify-end" onClick={() => setNavbar(navbar)}>
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                   </span>
                 </Link>
