@@ -35,12 +35,13 @@ export default function Navbar() {
         <div className="mx-3 lg:max-w-full md:items-center md:flex md:px-8">
           <div>
             <div className="mx-9 flex py-4 md:py-4 md:block">
-              <span
-                className="text-3xl text-white font-black m-[-1px] whitespace-nowrap"
+              <Link
+                className="text-3xl text-white font-black m-[-1px] whitespace-nowrap no-underline"
+                href="/"
                 style={{ clip: "rect(0,0,0,0)" }}
               >
                 ELEIKO
-              </span>
+              </Link>
               <div className="md:hidden">
                 <button
                   className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -195,7 +196,7 @@ export default function Navbar() {
                 <Link href="/search">
                   <span
                     className="font-bold text-white justify-end"
-                    onClick={() => setShowSearchBar(true)}
+                    onClick={() => setNavbar(navbar)}
                   >
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                   </span>
