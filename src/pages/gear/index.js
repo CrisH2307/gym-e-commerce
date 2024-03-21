@@ -9,8 +9,6 @@ import LiftingGear from "./LiftingGear";
 import AboutGear from "./About";
 import Apparel from "./Apparel";
 import Accessories from "./Accessories";
-import data_product from "../../components/Assets/data";
-import Item from "@/components/Item/Item";
 
 export default function Gear() {
   return (
@@ -69,31 +67,8 @@ export default function Gear() {
         <h1 style={textStyle} className="font-semibold text-4xl">
           Accessories
         </h1>
-        <a className="font-medium text-md hover:no-underline hover:delay-300ms inline-flex items-end">
-          <button className="inline-block text-xl text-blue-950 transition-all duration-300 hover:no-underline underline hover:border-transparent">
-            View All
-          </button>
-        </a>
       </div>
       <Accessories />
-
-      <div className="flex flex-col w-full px-6 mt-24">
-        <div className="grid items-start" style={{ gridTemplateColumns: "repeat(auto-fill, 430px)" }}>
-          {data_product.map((item, i) => (
-            <Item
-              key={i}
-              id={item.id}
-              name={item.name}
-              image={item.image}
-              new_price={item.new_price}
-              old_price={item.old_price}
-              des={item.des}
-              single_price={item.single_price}
-              className="p-5 text-blue-950 rounded-md shadow-md"
-            />
-          ))}
-        </div>
-      </div>
 
       {/* About Gear */}
       <br />

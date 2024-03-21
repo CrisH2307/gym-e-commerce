@@ -5,7 +5,7 @@ export default function Apparel() {
         <div className="flex relative overflow-hidden ">
           <div className="relative overflow-hidden bg-blue-950">
             <img
-              src="https://eleiko.com/_next/image?url=https%3A%2F%2Feleiko.fra1.digitaloceanspaces.com%2Fcms-prod%2F290aab2da13dc73e299fc998e40f3135.webp&w=3840&q=75"
+              src="https://eleiko.com/_next/image?url=https%3A%2F%2Feleiko.fra1.digitaloceanspaces.com%2Fcms-prod%2F3d0804702c32f89bca4e7276e87af61b.webp&w=3840&q=75"
               className="object-cover transition-opacity duration-200 group-hover:opacity-75"
             ></img>
           </div>
@@ -26,7 +26,7 @@ export default function Apparel() {
         <div className="flex relative overflow-hidden ">
           <div className="relative overflow-hidden bg-blue-950">
             <img
-              src="https://eleiko.com/_next/image?url=https%3A%2F%2Feleiko.fra1.digitaloceanspaces.com%2Fcms-prod%2F357b8e36dba4b29e862ebf2df4063a05.webp&w=3840&q=75"
+              src="https://eleiko.com/_next/image?url=https%3A%2F%2Feleiko.fra1.digitaloceanspaces.com%2Fcms-prod%2Fe348ed50000ccc92ccf622cda94c1cb4.webp&w=3840&q=75"
               className="object-cover transition-opacity duration-200 group-hover:opacity-75"
             ></img>
           </div>
@@ -47,7 +47,7 @@ export default function Apparel() {
         <div className="flex relative overflow-hidden ">
           <div className="relative overflow-hidden bg-blue-950">
             <img
-              src="https://eleiko.com/_next/image?url=https%3A%2F%2Feleiko.fra1.digitaloceanspaces.com%2Fcms-prod%2Fbc440911e829a1cf63ad9c6db8432262.webp&w=3840&q=75"
+              src="https://eleiko.com/_next/image?url=https%3A%2F%2Feleiko.fra1.digitaloceanspaces.com%2Fcms-prod%2F76658b4da584e6fe953c15f453e12c10.webp&w=3840&q=75"
               className="object-cover transition-opacity duration-200 group-hover:opacity-75"
             ></img>
           </div>
@@ -68,7 +68,7 @@ export default function Apparel() {
         <div className="flex relative overflow-hidden ">
           <div className="relative overflow-hidden bg-blue-950">
             <img
-              src="https://eleiko.com/_next/image?url=https%3A%2F%2Feleiko.fra1.digitaloceanspaces.com%2Fcms-prod%2Fb830019bcd44050e68ff8c17b6ce2351.webp&w=3840&q=75"
+              src="https://eleiko.com/_next/image?url=https%3A%2F%2Feleiko.fra1.digitaloceanspaces.com%2Fcms-prod%2F58f66d6b7d210ffe849af9f7edcbd40e.webp&w=3840&q=75"
               className="object-cover transition-opacity duration-200 group-hover:opacity-75"
             ></img>
           </div>
