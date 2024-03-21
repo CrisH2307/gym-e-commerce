@@ -27,9 +27,7 @@ export default function EquipmentDetailbyID({ equipment }) {
   return (
     <div>
       <Header />
-      <div style={secondaryStyle}>
-        <Navbar />
-      </div>
+      <Navbar />
       <div className="my-24 relative">
         <div className="relative flex flex-col">
           <div className="w-full mb-4 absolute top-0 left-0 z-10">
