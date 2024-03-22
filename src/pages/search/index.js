@@ -2,9 +2,14 @@ import React, { useState, useRef } from "react";
 import Data from "../../components/Assets/data";
 import "./search.css";
 import BackspaceIcon from "@mui/icons-material/Backspace";
+import CancelIcon from "@mui/icons-material/Cancel";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 const Search = () => {
+  //const [search, setSearchbar] = useState(false);
   const [query, setQuery] = useState("");
   const inputRef = useRef(null);
+  const router = useRouter();
 
   const clearSearch = () => {
     setQuery("");
@@ -29,6 +34,9 @@ const Search = () => {
           </div>
         )}
       </div>
+      <button rel="icon" onClick={() => router.back()}>
+        <CancelIcon />
+      </button>
       <span>Suggestions</span>
       <ul className="list">
         {Data.filter((data) => data.name.toLowerCase().includes(query)).map(
