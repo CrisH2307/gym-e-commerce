@@ -18,10 +18,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div
-      style={mainStyle}
-      className="relative z-50 h-12 flex items-center w-full overflow-hidden"
-    >
+    <div style={mainStyle} className="relative z-50 h-12 flex items-center w-full overflow-hidden">
       <div className="hidden h-full md:flex">
         <div className="relative w-full flex px-6 md:px-14 lg:px-20 flex-col flex-1">
           <div className="flex justify-end flex-1">
@@ -41,9 +38,7 @@ export default function Header() {
                   </svg>
                   <div className="space-x-60">
                     <span>Contact Us</span>
-                    <span className="font-sans align-middle">
-                      {headings[i]}
-                    </span>
+                    <span className="font-sans align-middle">{headings[i]}</span>
                   </div>
                 </a>
               </div>
