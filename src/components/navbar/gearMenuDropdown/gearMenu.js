@@ -9,31 +9,23 @@ export default function GearMenuDropdown() {
           height: "100vh",
           width: "145vw",
           left: "50%",
-          transform: "translateX(-17.5%)",
+          transform: "translateX(-13.85%)",
         }}
       >
         <div className=" flex text-left">
           <div className="w-1/2">
             <div className=" grid lg:grid-cols-1  gap-y-3 pl-20 pt-12 text-xl">
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline">
-                  View All
-                </a>
+                <a className="border-white border-b-2 text-white font-bold no-underline">View All</a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl ">
-                  Lifting Gear
-                </a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl ">Lifting Gear</a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
-                  Apparel
-                </a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Apparel</a>
               </div>
               <div className=" flex items-center" href="/barbells">
-                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">
-                  Accessories
-                </a>
+                <a className="border-white border-b-2 text-white font-bold no-underline text-xl">Accessories</a>
               </div>
             </div>
             <div className="flex pt-80 mt-2.5">
