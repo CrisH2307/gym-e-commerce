@@ -14,11 +14,7 @@ export default function HeaderSection() {
         ></div>
       </div>
       <div className="z-10 pointer-events-none absolute top-10 bottom-10 left-6 right-6 md:top-14 md:bottom-14 md:left-14 md:right-14 lg:top-20 lg:bottom-20 lg:left-20 lg:right-20">
-        <div className="inline-block absolute top-0 right-0 md:top-auto md:bottom-0 lg:right-auto lg:bottom-auto lg:left-1/2 lg:top-1/2 transform origin-bottom-right md:origin-bottom-left lg:origin-center -rotate-90 -translate-y-full md:translate-y-0 md:translate-x-full lg:-translate-x-1/2 mr-[-2px] lg:mr-0 lg:-ml-[-1px] mt-[-0.4em] lg:mt-0 md:mb-[-1px] lg:mb-0">
-          {/* <div className="text-xs font-medium leading-none uppercase tracking-[0.4em] whitespace-nowrap text-accent text-red-700">
-            Raise the Bar
-          </div> */}
-        </div>
+        <span className="inline-block absolute top-0 right-0 md:top-auto md:bottom-0 lg:right-auto lg:bottom-auto lg:left-1/2 lg:top-1/2 transform origin-bottom-right md:origin-bottom-left lg:origin-center -rotate-90 -translate-y-full md:translate-y-0 md:translate-x-full lg:-translate-x-1/2 mr-[-2px] lg:mr-0 lg:-ml-[-1px] mt-[-0.4em] lg:mt-0 md:mb-[-1px] lg:mb-0"></span>
       </div>
       <div className="flex flex-1 w-full relative">
         <div className="flex flex-1 flex-col lg:flex-row">
