@@ -15,14 +15,23 @@ import category from "./category";
 
 export default function Equipments() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isRotated, setIsRotated] = useState(false);
+  const [categoryStates, setCategoryStates] = useState(Array(category.length).fill(false));
+  const [isSortFormOpen, setIsSortFormOpen] = useState(Array(category.length).fill(false));
 
-  const setCollapse = () => {
-    setIsRotated(!isRotated);
+  const setCollapse = (index) => {
+    const updateStates = [...categoryStates];
+    updateStates[index] = !updateStates[index];
+    setCategoryStates(updateStates);
   };
 
   const ToggleSidebar = () => {
     setIsOpen(!isOpen);
+  };
+
+  const toggleSortForm = (index) => {
+    const updateStates = [...isSortFormOpen];
+    updateStates[index] = !updateStates[index];
+    setIsSortFormOpen(updateStates);
   };
 
   const EquipmentSidebarFilter = () => {
@@ -48,25 +57,24 @@ export default function Equipments() {
           </div>
           <hr />
 
-          {category.map((each) => (
+          {category.map((each, index) => (
             <>
-              <div className="flex items-center py-4">
+              <div
+                className="flex items-center py-4"
+                onClick={(e) => {
+                  setCollapse(index);
+                  stopPropagation(e);
+                }}
+              >
                 <div className="px-4 w-10/12">
                   <span className="font-bold">{each.categoryName}</span>
                 </div>
                 <div className="flex items-center px-1">
-                  <button
-                    onClick={(e) => {
-                      setCollapse();
-                      stopPropagation(e);
-                      setIsListOpen(!isListOpen);
-                    }}
-                    className="inline-flex items-center justify-center"
-                  >
+                  <button className="inline-flex items-center justify-center">
                     <FontAwesomeIcon
                       icon={faAngleUp}
                       size="xl"
-                      style={{ transform: isRotated ? "rotate(180deg)" : "rotate(0deg)" }}
+                      style={{ transform: categoryStates[index] ? "rotate(180deg)" : "rotate(0deg)" }}
                     />
                   </button>
                 </div>
@@ -76,7 +84,7 @@ export default function Equipments() {
           ))}
 
           {/* SORT FORM */}
-          {isRotated && (
+          {isSortFormOpen && (
             <div className="p-3" onClick={stopPropagation}>
               <Form>
                 {["radio"].map((type) => (
