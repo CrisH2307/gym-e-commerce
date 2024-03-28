@@ -18,12 +18,15 @@ export default function Header() {
   }, []);
 
   return (
-    <div style={mainStyle} className="relative z-50 h-12 flex items-center w-full overflow-hidden">
+    <div
+      style={mainStyle}
+      className="relative z-50 h-12 flex items-center w-full overflow-hidden"
+    >
       <div className="hidden h-full md:flex">
         <div className="relative w-full flex px-6 md:px-14 lg:px-20 flex-col flex-1">
           <div className="flex justify-end flex-1">
             <div className="z-20 flex">
-              <div className="w-10 bg-gradient-to-l from-primary-dark"></div>
+              {/* <div className="w-10 bg-gradient-to-l from-primary-dark"></div> */}
               <div className="flex items-center bg-primary-dark">
                 <a className="flex self-center space-x-2 text-sm font-bold tracking-wide text-white hover:underline no-underline ">
                   <svg
@@ -38,7 +41,9 @@ export default function Header() {
                   </svg>
                   <div className="space-x-60">
                     <span>Contact Us</span>
-                    <span className="font-sans align-middle">{headings[i]}</span>
+                    <span className="font-sans align-middle">
+                      {headings[i]}
+                    </span>
                   </div>
                 </a>
               </div>
@@ -50,11 +55,11 @@ export default function Header() {
       <div className="absolute inset-0 w-full h-full embla top-navigation embla--is-ready">
         <div className="h-full">
           <div
-            className="embla__container flex w-full h-full !transform-none"
+            className="embla__container flex w-full h-full transform-none"
             style={{ transform: "translate3d(0.000975178px, 0px, 0px)" }}
           >
             <div
-              className="top-0 !left-0 !right-0 h-full opacity-0 transition-opacity duration-1000 embla__slide flex-shrink-0 w-full text-white font-medium text-sm flex flex-col items-center justify-center text-center embla-slide-fade-selected"
+              className="top-0 left-0 right-0 h-full opacity-0 transition-opacity duration-1000 embla__slide flex-shrink-0 w-full text-white font-medium text-sm flex flex-col items-center justify-center text-center embla-slide-fade-selected"
               style={{ transform: "translate3d(0px, 0px, 0px)" }}
             >
               <div className="relative w-full flex px-6 md:px-14 lg:px-20 flex-col">

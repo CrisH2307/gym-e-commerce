@@ -74,3 +74,8 @@ td {
   font-size: 20px;
   padding: 10px; /* Add padding to the data cells */
 }
+
+.suggestion {
+  font-weight: bold;
+  font: 1.2rem "Fira Sans", sans-serif;
+}

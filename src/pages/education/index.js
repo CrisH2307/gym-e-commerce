@@ -7,8 +7,13 @@ import {
   textStyle,
 } from "@/components/headerSection/HeaderSection";
 import Footer from "@/components/footer/Footer";
-import Image from "next/image";
+import Popular from "../../components/Popular/Popular";
 import background from "../../components/Assets/background.webp";
+import IMG1 from "./Component_Edu.webp";
+import IMG2 from "./Component_Edu2.webp";
+import Twocolumn from "./Twocolumn";
+import Apparel from "../gear/Apparel";
+import Image from "next/image";
 
 export default function Education() {
   return (
@@ -67,7 +72,7 @@ export default function Education() {
           <div className="flex flex-1">
             <div className="relative w-full px-20 flex-col max-w-5xl mx-auto">
               <div className="max-w-5xl">
-                <p className="font-semibold text-xl max-w-none leading-9">
+                <p className="font-semibold text-xl max-w-none leading-9 text-white">
                   Whether a coach, trainer, operator, or lifter, you deserve
                   maximum results. And we are commited to helping you achieve
                   them. We help you overcome challenges and enhance
@@ -91,42 +96,92 @@ export default function Education() {
           </button>
         </a>
       </div>
-      {/* <p className="font-semibold">
-        We provide resources to meet your learning style and needs. From papers
-        and articles for the reader, training programs for the doer to strength
-        talks, coaching tips and an exercise video library for the viewer —
-        explore our comprehensive collection of materials to support your
-        coaching and strength training journey.
-      </p> */}
-
+      <Twocolumn />
+      <Apparel />
       {/* Apparel Gear */}
       <div className="flex flex-wrap justify-between items-center px-[75px] pt-20">
-        <h1 style={textStyle} className="font-semibold text-4xl">
-          Apparel
-        </h1>
-        <a className="font-medium text-md hover:no-underline hover:delay-300ms inline-flex items-end">
-          <button className="inline-block text-xl text-blue-950 transition-all duration-300 hover:no-underline underline hover:border-transparent">
-            View All
-          </button>
-        </a>
+        <div className="relative flex flex-col">
+          <div className="relative w-full flex px-6 md:px-14 lg:px-20 flex-col flex-1 justify-center overflow-x-hidden">
+            <div className="flex flex-col gap-y-12 lg:gap-y-14">
+              <div className="flex items-center gap-x-8 lg:gap-x-20 flex-wrap lg:flex-nowrap lg:flex-row-reverse">
+                <div className="w-full md:w-1/2 p-6 ">
+                  <Image src={IMG1} width={2880} height={1922} alt="IMG1" />
+                  <div className="mt-6">
+                    <Image src={IMG2} width={2880} height={1922} alt="IMG1" />
+                  </div>
+                </div>
+                <div className="w-full lg:mt-0 lg:w-1/2 lg:max-w-full lg:flex-1 flex lg:justify-end mt-6 md:mt-8">
+                  <div className="relative w-full flex flex-col">
+                    <div className="flex flex-col w-full max-w-xl 2xl:max-w-2xl gap-y-8 lg:gap-y-10 xl:gap-y-12 2xl:gap-y-14">
+                      <div className="flex flex-col gap-y-4 md:gap-y-6 xl:gap-y-8">
+                        <div className="flex flex-col gap-y-2">
+                          <p className="font-medium text-h-sm md:text-h-base text-primary-2">
+                            Live and Online Courses
+                          </p>
+                          <h2
+                            style={textStyle}
+                            className="font-semibold text-4xl"
+                          >
+                            Grounded in science. Proven in practice.
+                          </h2>
+                        </div>
+                        <div className="font-medium text-base md:text-lg 2xl:text-xl 2xl:leading-normal prose text-primary">
+                          <p>
+                            Eleiko Education delivers extended learning
+                            opportunities in both live and online formats. Our
+                            live courses and workshops combine systems and
+                            science with practical application to develop and
+                            enhance your technique and coaching skills in
+                            Weightlifting, Powerlifting, Functional Training,
+                            and Tactical Training.
+                          </p>
+                          <p>
+                            Our online courses enable you to progress through
+                            multimedia content at your own pace. Each course
+                            provides lectures, practical applications, and
+                            instruction videos with a downloadable manual,
+                            training programs, helpful articles, and CEUs.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex flex-wrap gap-4 items-center w-full sm:w-auto">
+                        <a
+                          href="https://education.eleiko.com/sv/education/courses#gs.9fwq70"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle px-7 xl:px-8 text-[15px] border-transparent hover:opacity-75 bg-current text-[#002A39]"
+                        >
+                          <span className="inline-flex gap-x-10 items-center leading-[48px] text-base text-white">
+                            Courses in the Nordics
+                          </span>
+                        </a>
+                        <a
+                          href="https://eleiko.inspire360.com/"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle px-7 xl:px-8 text-[15px] bg-transparent hover:opacity-75 border-primary text-primary"
+                        >
+                          <span className="inline-flex gap-x-2 items-center leading-[38px] xl:leading-[48px] mt-[-2px]">
+                            Courses in the US
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
       {/* Accessories Gear */}
       <div className="flex flex-wrap justify-between items-center px-[75px] pt-20">
         <h1 style={textStyle} className="font-semibold text-4xl">
-          Accessories
+          Strength Essentials
         </h1>
       </div>
 
-      {/* About Gear */}
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Popular />
 
       <Footer />
     </>

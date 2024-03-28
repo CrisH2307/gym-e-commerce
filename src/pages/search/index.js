@@ -40,7 +40,7 @@ const Search = () => {
       <Link rel="icon" href={`/`}>
         <CancelIcon />
       </Link>
-      <span>Suggestions</span>
+      <span className="suggestion">Suggestions</span>
       <Table data={search(data_product)} />
     </div>
   );
