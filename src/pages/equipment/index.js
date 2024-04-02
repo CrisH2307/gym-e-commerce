@@ -4,133 +4,44 @@ import Navbar from "../../components/navbar/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../app/globals.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleUp, faArrowUpWideShort, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpWideShort, faXmark } from "@fortawesome/free-solid-svg-icons";
 import data_product from "../../components/Assets/data";
 import Item from "@/components/Item/Item";
 import Footer from "@/components/footer/Footer";
 import React, { useState } from "react";
 import { Box, Drawer } from "@mui/material";
-import Form from "react-bootstrap/Form";
-import category from "./category";
+import SortForm from "../../components/FormComponents/SortForm";
+import RigsForm from "@/components/FormComponents/RigsForm";
 
 export default function Equipments() {
   const [isOpen, setIsOpen] = useState(false);
-  const [categoryStates, setCategoryStates] = useState(Array(category.length).fill(false));
-  const [isSortFormOpen, setIsSortFormOpen] = useState(Array(category.length).fill(false));
-
-  const setCollapse = (index) => {
-    const updateStates = [...categoryStates];
-    updateStates[index] = !updateStates[index];
-    setCategoryStates(updateStates);
-  };
 
   const ToggleSidebar = () => {
     setIsOpen(!isOpen);
   };
 
-  const toggleSortForm = (index) => {
-    const updateStates = [...isSortFormOpen];
-    updateStates[index] = !updateStates[index];
-    setIsSortFormOpen(updateStates);
-  };
-
   const EquipmentSidebarFilter = () => {
-    const [isListOpen, setIsListOpen] = useState(false);
-    const [value, setValue] = React.useState("this");
-
-    const stopPropagation = (e) => {
-      e.stopPropagation();
-    };
-
     return (
-      <div style={{ ...mainStyle, color: "white" }}>
-        <Box sx={{ width: 350, height: "100%" }} role="presentation" onClick={(e) => ToggleSidebar(false)}>
-          <div style={secondaryStyle} className="flex items-center py-12 text-white">
-            <div className="px-4 w-10/12">
-              <h2 className="font-bold">90 Items</h2>
-            </div>
-            <div className="flex items-center px-2">
-              <button onClick={ToggleSidebar} className="inline-flex items-center justify-center text-white">
-                <FontAwesomeIcon icon={faXmark} size="xl" />
-              </button>
-            </div>
-          </div>
-          <hr />
-
-          {category.map((each, index) => (
-            <>
-              <div
-                className="flex items-center py-4"
-                onClick={(e) => {
-                  setCollapse(index);
-                  stopPropagation(e);
-                }}
-              >
-                <div className="px-4 w-10/12">
-                  <span className="font-bold">{each.categoryName}</span>
-                </div>
-                <div className="flex items-center px-1">
-                  <button className="inline-flex items-center justify-center">
-                    <FontAwesomeIcon
-                      icon={faAngleUp}
-                      size="xl"
-                      style={{ transform: categoryStates[index] ? "rotate(180deg)" : "rotate(0deg)" }}
-                    />
-                  </button>
-                </div>
+      <>
+        <div style={{ ...mainStyle, color: "white" }}>
+          <Box sx={{ width: 350, height: "100%" }} role="presentation" onClick={(e) => ToggleSidebar(false)}>
+            <div style={secondaryStyle} className="flex items-center py-10 text-white">
+              <div className="px-4 w-10/12">
+                <h2 className="font-bold">90 Items</h2>
               </div>
-              <hr />
-            </>
-          ))}
-
-          {/* SORT FORM */}
-          {isSortFormOpen && (
-            <div className="p-3" onClick={stopPropagation}>
-              <Form>
-                {["radio"].map((type) => (
-                  <div key={`radio-${type}`} className="p-2">
-                    <Form.Check
-                      className="py-1 font-bold"
-                      label="Popular Product"
-                      name="group1"
-                      type={type}
-                      id={`-${type}-1`}
-                    />
-                    <Form.Check
-                      className="py-1 font-bold"
-                      label="Name A-Z"
-                      name="group1"
-                      type={type}
-                      id={`-${type}-2`}
-                    />
-                    <Form.Check
-                      className="py-1 font-bold"
-                      label="Name Z-A"
-                      name="group1"
-                      type={type}
-                      id={`-${type}-1`}
-                    />
-                    <Form.Check
-                      className="py-1 font-bold"
-                      label="Price Low to High"
-                      name="group1"
-                      type={type}
-                      id={`-${type}-2`}
-                    />
-                    <Form.Check
-                      className="py-1 font-bold"
-                      label="Price High to Low"
-                      name="group1"
-                      type={type}
-                      id={`-${type}-1`}
-                    />
-                  </div>
-                ))}
-              </Form>
+              <div className="flex items-center px-2">
+                <button onClick={ToggleSidebar} className="inline-flex items-center justify-center text-white">
+                  <FontAwesomeIcon icon={faXmark} size="xl" />
+                </button>
+              </div>
             </div>
-          )}
-        </Box>
-      </div>
+
+            <SortForm />
+            <hr />
+            <RigsForm />
+          </Box>
+        </div>
+      </>
     );
   };
 

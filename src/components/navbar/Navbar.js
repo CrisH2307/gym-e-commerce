@@ -176,7 +176,7 @@ export default function Navbar() {
               <li className="pb-6 text-sm py-1 px-3 text-center">
                 <Link href="/equipment">
                   <span className="font-bold text-white justify-end" onClick={() => setNavbar(navbar)}>
-                    <FontAwesomeIcon icon={faCartShopping} />{" "}
+                    <FontAwesomeIcon icon={faCartShopping} />
                   </span>
                 </Link>
               </li>
