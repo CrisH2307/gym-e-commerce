@@ -57,7 +57,7 @@ export default function CartContent({ show, setShow }) {
         </div>
       </div>
       <Modal.Body>
-        {items.map((item, index) => (
+        {items.map((item) => (
           <div key={item.id} className="flex mb-4 pl-2">
             <Image src={item.image.src} alt={item.name} width={80} height={100} className="w-[7.5rem]" />
             <div className="px-4 flex-1 py-3">
