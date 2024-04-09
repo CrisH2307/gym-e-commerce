@@ -1,11 +1,7 @@
 import Header from "@/components/header/Header";
 import "../../app/globals.css";
 import Navbar from "@/components/navbar/Navbar";
-import {
-  mainStyle,
-  secondaryStyle,
-  textStyle,
-} from "@/components/headerSection/HeaderSection";
+import { mainStyle, secondaryStyle, textStyle } from "@/components/headerSection/HeaderSection";
 import Footer from "@/components/footer/Footer";
 import Popular from "../../components/Popular/Popular";
 import background from "../../components/Assets/background.webp";
@@ -30,9 +26,7 @@ export default function Education() {
           <div className="relative flex w-full px-20 flex-col">
             <div className="flex flex-col flex-wrap items-start justify-between gap-x-10 gap-y-8">
               <div className="flex flex-col gap-y-3">
-                <h1 className="font-bold text-6xl text-white">
-                  Eleiko Education
-                </h1>
+                <h1 className="font-bold text-6xl text-white">Eleiko Education</h1>
               </div>
 
               <div className="flex flex-wrap justify-between w-full gap-4">
@@ -73,11 +67,9 @@ export default function Education() {
             <div className="relative w-full px-20 flex-col max-w-5xl mx-auto">
               <div className="max-w-5xl">
                 <p className="font-semibold text-xl max-w-none leading-9 text-white">
-                  Whether a coach, trainer, operator, or lifter, you deserve
-                  maximum results. And we are commited to helping you achieve
-                  them. We help you overcome challenges and enhance
-                  opportunities with resources and courses built to inform and
-                  transform your strength your strength training journey.
+                  Whether a coach, trainer, operator, or lifter, you deserve maximum results. And we are commited to
+                  helping you achieve them. We help you overcome challenges and enhance opportunities with resources and
+                  courses built to inform and transform your strength your strength training journey.
                 </p>
               </div>
             </div>
@@ -115,32 +107,22 @@ export default function Education() {
                     <div className="flex flex-col w-full max-w-xl 2xl:max-w-2xl gap-y-8 lg:gap-y-10 xl:gap-y-12 2xl:gap-y-14">
                       <div className="flex flex-col gap-y-4 md:gap-y-6 xl:gap-y-8">
                         <div className="flex flex-col gap-y-2">
-                          <p className="font-medium text-h-sm md:text-h-base text-primary-2">
-                            Live and Online Courses
-                          </p>
-                          <h2
-                            style={textStyle}
-                            className="font-semibold text-4xl"
-                          >
+                          <p className="font-medium text-h-sm md:text-h-base text-primary-2">Live and Online Courses</p>
+                          <h2 style={textStyle} className="font-semibold text-4xl">
                             Grounded in science. Proven in practice.
                           </h2>
                         </div>
-                        <div className="font-medium text-base md:text-lg 2xl:text-xl 2xl:leading-normal prose text-primary">
-                          <p>
-                            Eleiko Education delivers extended learning
-                            opportunities in both live and online formats. Our
-                            live courses and workshops combine systems and
-                            science with practical application to develop and
-                            enhance your technique and coaching skills in
-                            Weightlifting, Powerlifting, Functional Training,
-                            and Tactical Training.
+                        <div className="font-medium text-base md:text-lg 2xl:text-xl 2xl:leading-normal prose">
+                          <p style={textStyle}>
+                            Eleiko Education delivers extended learning opportunities in both live and online formats.
+                            Our live courses and workshops combine systems and science with practical application to
+                            develop and enhance your technique and coaching skills in Weightlifting, Powerlifting,
+                            Functional Training, and Tactical Training.
                           </p>
                           <p>
-                            Our online courses enable you to progress through
-                            multimedia content at your own pace. Each course
-                            provides lectures, practical applications, and
-                            instruction videos with a downloadable manual,
-                            training programs, helpful articles, and CEUs.
+                            Our online courses enable you to progress through multimedia content at your own pace. Each
+                            course provides lectures, practical applications, and instruction videos with a downloadable
+                            manual, training programs, helpful articles, and CEUs.
                           </p>
                         </div>
                       </div>

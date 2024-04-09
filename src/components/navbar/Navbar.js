@@ -2,15 +2,24 @@
 import { faBars, faCartShopping, faMagnifyingGlass, faTableList, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import EquipmentMenuDropdown from "./equipmentMenuDropdown/equipmentMenu";
 import GearMenuDropdown from "./gearMenuDropdown/gearMenu";
 import HwwMenuDropdown from "./hwwMenuDropdown/hwwMenu";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
+  const router = useRouter();
   const [navbar, setNavbar] = useState(false);
   const [hoveredItems, setHoveredItems] = useState(Array(5).fill(false));
   const [isActive, setIsActive] = useState(false);
+  const [isEquipmentRoute, setIsEquipmentRoute] = useState(false);
+
+  useEffect(() => {
+    if (router.pathname) {
+      setIsEquipmentRoute(router.pathname === "/equipment" || router.pathname.startsWith("/equipment/"));
+    }
+  }, [router.pathname]);
 
   const handleMouseEnter = (index) => {
     setHoveredItems((prev) => prev.map((_, i) => (i === index ? true : false)));
@@ -24,7 +33,8 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="w-full bg-transparent fixed top-0 left-0 right-0 z-10 mt-9">
+      <nav className={`w-full bg-transparent fixed top-0 left-0 right-0 z-10 mt-9`}>
+        {" "}
         <div className="mx-3 lg:max-w-full md:items-center md:flex md:px-8">
           <div>
             <div className="mx-9 flex py-4 md:py-4 md:block">
@@ -64,13 +74,10 @@ export default function Navbar() {
                   onMouseEnter={() => handleMouseEnter(0)}
                   onMouseLeave={() => handleMouseLeave(0)}
                 >
-                  <Link
-                    className="no-underline font-bold text-white "
-                    href="/equipment"
-                    onClick={() => setNavbar(!navbar)}
-                  >
+                  <Link className={`no-underline font-bold`} href="/equipment" onClick={() => setNavbar(!navbar)}>
                     Equipment
                   </Link>
+
                   {hoveredItems[0] && <EquipmentMenuDropdown />}
                 </li>
                 <li
@@ -82,7 +89,7 @@ export default function Navbar() {
                   onMouseEnter={() => handleMouseEnter(1)}
                   onMouseLeave={() => handleMouseLeave(1)}
                 >
-                  <Link className="no-underline font-bold text-white" href="/gear" onClick={() => setNavbar(!navbar)}>
+                  <Link className="no-underline font-bold" href="/gear" onClick={() => setNavbar(!navbar)}>
                     Gear
                   </Link>
                   {hoveredItems[1] && <GearMenuDropdown />}
