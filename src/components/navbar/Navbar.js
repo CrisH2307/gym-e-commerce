@@ -1,5 +1,11 @@
 "use client";
-import { faBars, faCartShopping, faMagnifyingGlass, faTableList, faX } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faCartShopping,
+  faMagnifyingGlass,
+  faTableList,
+  faX,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -17,7 +23,10 @@ export default function Navbar() {
 
   useEffect(() => {
     if (router.pathname) {
-      setIsEquipmentRoute(router.pathname === "/equipment" || router.pathname.startsWith("/equipment/"));
+      setIsEquipmentRoute(
+        router.pathname === "/equipment" ||
+          router.pathname.startsWith("/equipment/")
+      );
     }
   }, [router.pathname]);
 
@@ -33,7 +42,9 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className={`w-full bg-transparent fixed top-0 left-0 right-0 z-10 mt-9`}>
+      <nav
+        className={`w-full bg-transparent fixed top-0 left-0 right-0 z-10 mt-9`}
+      >
         {" "}
         <div className="mx-3 lg:max-w-full md:items-center md:flex md:px-8">
           <div>
@@ -41,7 +52,12 @@ export default function Navbar() {
               <Link
                 href="/"
                 className="text-3xl inline-block text-white font-black m-[-1px] whitespace-nowrap no-underline"
-                style={{ letterSpacing: "0.03em", fontStretch: "expanded", fontSize: "2rem", lineHeight: "0.7" }}
+                style={{
+                  letterSpacing: "0.03em",
+                  fontStretch: "expanded",
+                  fontSize: "2rem",
+                  lineHeight: "0.7",
+                }}
               >
                 ELEIKO
               </Link>
@@ -50,7 +66,11 @@ export default function Navbar() {
                   className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
-                  {navbar ? <FontAwesomeIcon icon={faX} /> : <FontAwesomeIcon icon={faBars} />}
+                  {navbar ? (
+                    <FontAwesomeIcon icon={faX} />
+                  ) : (
+                    <FontAwesomeIcon icon={faBars} />
+                  )}
                 </button>
               </div>
             </div>
@@ -65,16 +85,24 @@ export default function Navbar() {
               <ul className="h-screen md:h-auto items-center justify-center md:flex">
                 <li
                   className={`relative pt-10 text-sm pb-10 px-3 text-center delay-300 transition-all duration-300 ease-in-out ${
-                    hoveredItems[0] ? "border-b-3 border-blue-950" : "border-b-3 border-transparent"
+                    hoveredItems[0]
+                      ? "border-b-3 border--950"
+                      : "border-b-3 border-transparent"
                   }`}
                   style={{
-                    borderBottom: hoveredItems[0] ? "3px solid blue" : "3px solid transparent",
+                    borderBottom: hoveredItems[0]
+                      ? "3px solid blue"
+                      : "3px solid transparent",
                     transition: "border-color 0.3s ease",
                   }}
                   onMouseEnter={() => handleMouseEnter(0)}
                   onMouseLeave={() => handleMouseLeave(0)}
                 >
-                  <Link className={`no-underline font-bold`} href="/equipment" onClick={() => setNavbar(!navbar)}>
+                  <Link
+                    className={`no-underline font-bold`}
+                    href="/equipment"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     Equipment
                   </Link>
 
@@ -83,13 +111,19 @@ export default function Navbar() {
                 <li
                   className={`relative pt-10 text-sm pb-10 px-3 text-center`}
                   style={{
-                    borderBottom: hoveredItems[1] ? "3px solid blue" : "3px solid transparent",
+                    borderBottom: hoveredItems[1]
+                      ? "3px solid blue"
+                      : "3px solid transparent",
                     transition: "border-color 0.3s ease",
                   }}
                   onMouseEnter={() => handleMouseEnter(1)}
                   onMouseLeave={() => handleMouseLeave(1)}
                 >
-                  <Link className="no-underline font-bold" href="/gear" onClick={() => setNavbar(!navbar)}>
+                  <Link
+                    className="no-underline font-bold"
+                    href="/gear"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     Gear
                   </Link>
                   {hoveredItems[1] && <GearMenuDropdown />}
@@ -97,7 +131,9 @@ export default function Navbar() {
                 <li
                   className={`pt-10 text-sm pb-10 px-3 text-center`}
                   style={{
-                    borderBottom: hoveredItems[2] ? "3px solid blue" : "3px solid transparent",
+                    borderBottom: hoveredItems[2]
+                      ? "3px solid blue"
+                      : "3px solid transparent",
                     transition: "border-color 0.3s ease",
                   }}
                   onMouseEnter={() => handleMouseEnter(2)}
@@ -114,7 +150,9 @@ export default function Navbar() {
                 <li
                   className={`pt-10 text-sm pb-10 px-3 text-center`}
                   style={{
-                    borderBottom: hoveredItems[3] ? "3px solid blue" : "3px solid transparent",
+                    borderBottom: hoveredItems[3]
+                      ? "3px solid blue"
+                      : "3px solid transparent",
                     transition: "border-color 0.3s ease",
                   }}
                   onMouseEnter={() => handleMouseEnter(3)}
@@ -131,13 +169,19 @@ export default function Navbar() {
                 <li
                   className={`relative pt-10 text-sm pb-10 px-3 text-center`}
                   style={{
-                    borderBottom: hoveredItems[4] ? "3px solid blue" : "3px solid transparent",
+                    borderBottom: hoveredItems[4]
+                      ? "3px solid blue"
+                      : "3px solid transparent",
                     transition: "border-color 0.3s ease",
                   }}
                   onMouseEnter={() => handleMouseEnter(4)}
                   onMouseLeave={() => handleMouseLeave(4)}
                 >
-                  <Link className="no-underline font-bold text-white" href="/work" onClick={() => setNavbar(!navbar)}>
+                  <Link
+                    className="no-underline font-bold text-white"
+                    href="/work"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     How we work
                   </Link>
                   {hoveredItems[4] && <HwwMenuDropdown />}
@@ -158,7 +202,9 @@ export default function Navbar() {
                   <span
                     className="no-underline font-bold text-white justify-end border-b-4 border-white"
                     style={{
-                      transition: hoveredItems[0] ? "border-color 0.4 ease" : "3px solid blue",
+                      transition: hoveredItems[0]
+                        ? "border-color 0.4 ease"
+                        : "3px solid blue",
                     }}
                     onClick={() => setNavbar(navbar)}
                   >
@@ -168,21 +214,30 @@ export default function Navbar() {
               </li>
               <li className="pb-6 text-sm py-1 px-3 text-center">
                 <Link href="/search">
-                  <span className="font-bold text-white justify-end" onClick={() => setNavbar(navbar)}>
+                  <span
+                    className="font-bold text-white justify-end"
+                    onClick={() => setNavbar(navbar)}
+                  >
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                   </span>
                 </Link>
               </li>
               <li className="pb-6 text-sm py-1 px-3 text-center">
                 <Link href="/equipment">
-                  <span className="font-bold text-white justify-end" onClick={() => setNavbar(navbar)}>
+                  <span
+                    className="font-bold text-white justify-end"
+                    onClick={() => setNavbar(navbar)}
+                  >
                     <FontAwesomeIcon icon={faTableList} />
                   </span>
                 </Link>
               </li>
               <li className="pb-6 text-sm py-1 px-3 text-center">
                 <Link href="/equipment">
-                  <span className="font-bold text-white justify-end" onClick={() => setNavbar(navbar)}>
+                  <span
+                    className="font-bold text-white justify-end"
+                    onClick={() => setNavbar(navbar)}
+                  >
                     <FontAwesomeIcon icon={faCartShopping} />
                   </span>
                 </Link>
