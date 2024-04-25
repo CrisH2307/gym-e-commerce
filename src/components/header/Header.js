@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { mainStyle } from "../headerSection/HeaderSection";
-
 export default function Header() {
   const headings = [
     "Free Shipping on Apparel & Gear orders over $75",
@@ -26,7 +25,7 @@ export default function Header() {
         <div className="relative w-full flex px-6 md:px-14 lg:px-20 flex-col flex-1">
           <div className="flex justify-end flex-1">
             <div className="z-20 flex">
-              {/* <div className="w-10 bg-gradient-to-l from-primary-dark"></div> */}
+              <div className="w-10 bg-gradient-to-l from-primary-dark" />
               <div className="flex items-center bg-primary-dark">
                 <a className="flex self-center space-x-2 text-sm font-bold tracking-wide text-white hover:underline no-underline ">
                   <svg
@@ -52,11 +51,11 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="absolute inset-0 w-full h-full embla top-navigation embla--is-ready">
+      {/* <div className="absolute inset-0 w-full h-full embla top-navigation embla--is-ready">
         <div className="h-full">
           <div
-            className="embla__container flex w-full h-full transform-none"
-            style={{ transform: "translate3d(0.000975178px, 0px, 0px)" }}
+            className="embla__container flex w-full h-full"
+            style={{ transform: "translate3d(0px, 0px, 0px)" }}
           >
             <div
               className="top-0 left-0 right-0 h-full opacity-0 transition-opacity duration-1000 embla__slide flex-shrink-0 w-full text-white font-medium text-sm flex flex-col items-center justify-center text-center embla-slide-fade-selected"
@@ -67,20 +66,20 @@ export default function Header() {
                   <p>Free Shipping on Apparel & Gear over 75 USD</p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="top-0 !left-0 !right-0 h-full opacity-0 transition-opacity duration-1000 embla__slide flex-shrink-0 w-full text-white font-medium text-sm flex flex-col items-center justify-center text-center">
-              <a href="/en-ca/design-your-gym">
+      {/* <div className="top-0 left-0 right-0 h-full opacity-0 transition-opacity duration-1000 embla__slide flex-shrink-0 w-full text-white font-medium text-sm flex flex-col items-center justify-center text-center"> */}
+      {/* <a href="/en-ca/design-your-gym">
                 <div className="relative w-full flex px-6 md:px-14 lg:px-20 flex-col">
                   <div>
                     <p>Shop online or work with sales to design your gym.</p>
                   </div>
                 </div>
-              </a>
-            </div>
-          </div>
+              </a> */}
+      {/* </div> */}
+      {/* </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

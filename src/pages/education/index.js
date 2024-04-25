@@ -8,7 +8,7 @@ import {
 } from "@/components/headerSection/HeaderSection";
 import Footer from "@/components/footer/Footer";
 import Popular from "../../components/Popular/Popular";
-import background from "../../components/Assets/background.webp";
+// import background from "../../components/Assets/background.webp";
 import IMG1 from "./Component_Edu.webp";
 import IMG2 from "./Component_Edu2.webp";
 import IMG3 from "./StrengthEssential.webp";
@@ -184,7 +184,7 @@ export default function Education() {
               <Image src={IMG3} width={2500} height={1950} alt="IMG1" />
             </div>
           </div>
-          <div class="w-1/2 p-4 ">
+          <div className="w-1/2 p-4 ">
             <h2 className="pt-[150px] pb-[20px] font-semibold text-3xl text-white">
               Reach your full potential
             </h2>
