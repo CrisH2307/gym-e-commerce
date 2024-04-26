@@ -1,8 +1,16 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { secondaryStyle, textStyle } from "../headerSection/HeaderSection";
+import { Drawer } from "@mui/material";
+import SubmitForm from "../submitForm/submit";
 
 export default function Footer() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const ToggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <div className="relative w-full flex px-12 md:px-14 lg:px-28 flex-col py-20" style={secondaryStyle}>
@@ -49,7 +57,10 @@ export default function Footer() {
               Sign up for new product launches and restock information.
             </p>
             <div className="mt-8">
-              <button className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle px-7 xl:px-8 text-[15px] border-transparent hover:opacity-75 bg-white text-primary">
+              <button
+                onClick={(e) => ToggleSidebar()}
+                className="outline-none inline-flex justify-center items-center gap-x-2 cursor-pointer transition duration-200 font-bold relative rounded-full border-solid border-4 text-center whitespace-nowrap align-middle px-7 xl:px-8 text-[15px] border-transparent hover:opacity-75 bg-white text-primary"
+              >
                 <span
                   style={textStyle}
                   className="inline-flex gap-x-2 items-center leading-[38px] xl:leading-[48px] mt-[-2px]"
@@ -57,6 +68,9 @@ export default function Footer() {
                   Subscribe
                 </span>
               </button>
+              <Drawer open={isOpen} onClose={() => ToggleSidebar()}>
+                <SubmitForm />
+              </Drawer>
             </div>
           </div>
         </div>

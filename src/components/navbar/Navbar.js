@@ -15,7 +15,6 @@ export default function Navbar() {
   const [hoveredItems, setHoveredItems] = useState(Array(5).fill(false));
   const [isActive, setIsActive] = useState(false);
   const [isEquipmentRoute, setIsEquipmentRoute] = useState(false);
-
   const [isOpen, setIsOpen] = useState(false);
 
   const ToggleSidebar = () => {
