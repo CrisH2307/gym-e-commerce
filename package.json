@@ -22,7 +22,7 @@
     "@popperjs/core": "^2.11.8",
     "@radix-ui/react-popover": "^1.0.7",
     "bootstrap": "^5.3.3",
-    "framer-motion": "^11.0.24",
+    "framer-motion": "^11.1.7",
     "jotai": "^2.7.2",
     "jquery": "^3.7.1",
     "mdbootstrap": "^4.20.0",

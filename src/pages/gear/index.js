@@ -15,7 +15,7 @@ export default function Gear() {
     <>
       <Header />
       <Navbar />
-      <div style={secondaryStyle} className="relative flex flex-col h-[calc(49vh, 48px)]">
+      <div style={secondaryStyle} className="relative flex flex-col h-[calc(35vh, 48px)]">
         <div className="relative pb-14 pt-52">
           <div className="relative flex w-full px-20 flex-col">
             <div className="flex flex-col flex-wrap items-start justify-between gap-x-10 gap-y-8">

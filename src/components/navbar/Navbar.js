@@ -224,7 +224,7 @@ export default function Navbar() {
                   <span
                     className="no-underline font-bold text-current justify-end border-b-4 border-white"
                     style={{
-                      transition: hoveredItems[0] ? "border-color 0.4 ease" : "3px solid transparent",
+                      transition: hoveredItems[0] ? "border-color 0.2 ease" : "3px solid transparent",
                     }}
                     onClick={() => setNavbar(navbar)}
                   >
