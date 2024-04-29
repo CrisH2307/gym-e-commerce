@@ -80,6 +80,7 @@ export default function GearDetailbyID({ gear }) {
                     <div className="">
                       <Image
                         src={gear.image}
+                        alt="Gear Image"
                         className="w-full"
                         style={{ transition: "0.2s" }}
                         onMouseOver={(e) => {
@@ -138,7 +139,7 @@ export default function GearDetailbyID({ gear }) {
 
                     {/* Item Description */}
                     <div className="my-16" style={textStyle}>
-                      <p className="mt-8 font-medium text-xl lg:leading-normal max-w-xl ">
+                      <p className="mt-8 font-medium text-xl lg:leading-normal max-w-xl">
                         This is a used product. It is a fully functional product that has cosmetic damage from shipping
                         or from being used in events and competitions or from a customer sending it back due to regret.
                         It is in good working order but may show signs of wear. Eleiko Rubber Coated Change Plates
@@ -146,8 +147,9 @@ export default function GearDetailbyID({ gear }) {
                         core that is rubber coated, the change plates feature a minimalistic design with no center hub.
                         The plates have raised edges for easier handling and a snug, secure fit that takes less space on
                         the sleeve when plates are loaded. The black matte finish with white weight markings provides
-                        easy weight identification. The change plates range from 1,25 to 5 kg and are sold individually.
+                        easy weight identification. The change plates range from 1.25 to 5 kg and are sold individually.
                       </p>
+
                       <div className="flex flex-wrap gap-x-6 mt-6"></div>
                       <div className="mt-7 flex flex-wrap gap-x-6 items-baseline">
                         <div className="flex flex-wrap gap-x-3 items-baseline">

@@ -2,7 +2,7 @@ import EquipmentDetailbyID from "@/components/equipmentDetail/equipmentDetail";
 import { useRouter } from "next/router";
 import equipmentData from "@/components/Assets/data";
 
-export default function eachEquipment({ equipment }) {
+export default function EachEquipment({ equipment }) {
   const router = useRouter();
   const { id } = router.query;
 

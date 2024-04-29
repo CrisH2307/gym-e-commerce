@@ -8,17 +8,17 @@ export default function AboutGear() {
           <div className="relative w-full px-20 flex-col max-w-4xl mx-auto">
             <div className="max-w-5xl">
               <p className="font-semibold text-xl max-w-none leading-9">
-                Discover Eleiko Gear, rooted in 65 years of strength expertise and developed together with the world’s
-                strongest athletes. Whether you're an experienced athlete or at the beginning of your strength and
-                fitness journey, Eleiko gear is meticulously designed and crafted to elevate your training experience
-                and support your best performance outcomes.
+                Discover Eleiko Gear, rooted in 65 years of strength expertise and developed together with the
+                world&rsquo;s strongest athletes. Whether you&apos;re an experienced athlete or at the beginning of your
+                strength and fitness journey, Eleiko gear is meticulously designed and crafted to elevate your training
+                experience and support your best performance outcomes.
               </p>
               <br />
               <p className="font-semibold text-xl max-w-none leading-9">
-                At Eleiko, we’ve designed gear with the same commitment to quality and durability as we have for our
-                strength equipment. We offer a range of gear from apparel to accessories, each piece is engineered to
-                endure the toughest workouts, ensuring they withstand the test of time. Eleiko Gear is more than just
-                style; it's about elevating your performance.
+                At Eleiko, we&rsquo;ve designed gear with the same commitment to quality and durability as we have for
+                our strength equipment. We offer a range of gear from apparel to accessories, each piece is engineered
+                to endure the toughest workouts, ensuring they withstand the test of time. Eleiko Gear is more than just
+                style; it&apos;s about elevating your performance.
               </p>
               <br />
               <p className="font-semibold text-xl max-w-none leading-9">
