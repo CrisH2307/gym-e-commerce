@@ -1,7 +1,9 @@
 import gearData from "@/components/Assets/gearData";
 import GearDetailbyID from "@/components/gearDetail/gearDetail";
+import { useRouter } from "next/router";
 
 export default function EachGear({ gear }) {
+  const router = useRouter();
   return (
     <div>
       <GearDetailbyID gear={gear} />

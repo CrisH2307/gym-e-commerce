@@ -1,7 +1,9 @@
 import EquipmentDetailbyID from "@/components/equipmentDetail/equipmentDetail";
 import equipmentData from "@/components/Assets/data";
+import { useRouter } from "next/router";
 
 export default function EachEquipment({ equipment }) {
+  const router = useRouter();
   return (
     <div>
       <EquipmentDetailbyID equipment={equipment} />

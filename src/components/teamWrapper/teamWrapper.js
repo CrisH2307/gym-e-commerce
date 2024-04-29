@@ -9,6 +9,7 @@ import { Keyboard, Scrollbar, Navigation, Pagination } from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import teamData from "../../../data/teamMembers";
+import Image from "next/image";
 
 export default function TeamWrapper() {
   const swiperRef = useRef(null);
@@ -44,9 +45,12 @@ export default function TeamWrapper() {
             <div className="flex mx-6 md:mx-14 lg:mx-20 w-11/12 flex-col flex-1 justify-center overflow-x-hidden">
               <div className="flex relative overflow-hidden mb-8 md:mb-8 lg:mb-10">
                 <div className="">
-                  <img
-                    src={emp.empImg}
-                    className="object-cover transition-opacity duration-200 inset-0 text-transparent"
+                  <Image
+                    src={`/img/${emp.empImg}`}
+                    alt={emp.empName}
+                    layout="fill"
+                    objectFit="cover"
+                    className="transition-opacity duration-200"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent pointer-event-none"></div>
