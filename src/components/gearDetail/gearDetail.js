@@ -80,7 +80,7 @@ export default function GearDetailbyID({ gear }) {
                     <div className="">
                       <Image
                         src={gear.image}
-                        alt="Gear Image"
+                        alt={`Image of ${gear.name}`}
                         className="w-full"
                         style={{ transition: "0.2s" }}
                         onMouseOver={(e) => {
@@ -455,7 +455,7 @@ export default function GearDetailbyID({ gear }) {
             </div>
           </div>
           <div className="">
-            <p>Nice mug but it doesn't hold heat well</p>
+            <p>Nice mug but it doesn&apos;t hold heat well</p>
             <div className="flex py-2">
               <h6 className="py-2 pr-3">Cris H</h6>
               <button
@@ -483,7 +483,7 @@ export default function GearDetailbyID({ gear }) {
             </div>
           </div>
           <div className="">
-            <p>Nice mug but it doesn't hold heat well</p>
+            <p>Nice mug but it doesn&apos;t hold heat well</p>
             <div className="flex py-2">
               <h6 className="py-2 pr-3">Cris H</h6>
               <button
@@ -511,7 +511,7 @@ export default function GearDetailbyID({ gear }) {
             </div>
           </div>
           <div className="">
-            <p>Nice mug but it doesn't hold heat well</p>
+            <p>Nice mug but it doesn&apos;t hold heat well</p>
             <div className="flex py-2">
               <h6 className="py-2 pr-3">Cris H</h6>
               <button
@@ -539,7 +539,7 @@ export default function GearDetailbyID({ gear }) {
             </div>
           </div>
           <div className="">
-            <p>Nice mug but it doesn't hold heat well</p>
+            <p>Nice mug but it doesn&apos;t hold heat well</p>
             <div className="flex py-2">
               <h6 className="py-2 pr-3">Cris H</h6>
               <button
@@ -567,7 +567,7 @@ export default function GearDetailbyID({ gear }) {
             </div>
           </div>
           <div className="">
-            <p>Nice mug but it doesn't hold heat well</p>
+            <p>Nice mug but it doesn&apos;t hold heat well</p>
             <div className="flex py-2">
               <h6 className="py-2 pr-3">Cris H</h6>
               <button

@@ -18,8 +18,9 @@ export default function AboutGear() {
                 At Eleiko, we&rsquo;ve designed gear with the same commitment to quality and durability as we have for
                 our strength equipment. We offer a range of gear from apparel to accessories, each piece is engineered
                 to endure the toughest workouts, ensuring they withstand the test of time. Eleiko Gear is more than just
-                style; it&apos;s about elevating your performance.
+                style; it&rsquo;s about elevating your performance.
               </p>
+
               <br />
               <p className="font-semibold text-xl max-w-none leading-9">
                 We offer a diverse range of training gear, from comfortable and stylish apparel fit for a day in the

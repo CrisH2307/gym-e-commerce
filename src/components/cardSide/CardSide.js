@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { mainStyle, textStyle } from "../headerSection/HeaderSection";
 
 export default function CardSide() {
@@ -6,10 +7,13 @@ export default function CardSide() {
       <div className="flex flex-row ml-8 my-16 lg:ml-20">
         <div className="w-full flex flex-row flex-1 justify-center overflow-x-hidden">
           <div className="overflow-hidden">
-            <img
+            <Image
               src="https://eleiko.com/_next/image?url=https%3A%2F%2Ffra1.digitaloceanspaces.com%2Feleiko%2Fcms-prod%2Fc50a0e52ca1c58d21c0b256bdb7e8daf.png&w=3840&q=75"
+              alt="Eleiko Gear Image"
+              width={3840}
+              height={2160}
               className="h-full w-11/12 inset-0"
-            ></img>
+            />
           </div>
         </div>
         <div className="flex lg:flex-1 justify-start mt-6 md:mt-8 lg:mt-24 w-full">
@@ -67,10 +71,13 @@ export default function CardSide() {
         </div>
         <div className="flex lg:flex-1 lg:w-1/2 lg:mr-20">
           <div className="overflow-hidden w-full">
-            <img
+            <Image
               src="https://eleiko.com/_next/image?url=https%3A%2F%2Feleiko.fra1.digitaloceanspaces.com%2Fcms-prod%2F68990e33fcf49b38c4edc1d444d2c0de.jpg&w=3840&q=75"
+              alt="Stronger World Image"
+              width={3840}
+              height={2160}
               className="h-full inset-0"
-            ></img>
+            />
           </div>
         </div>
       </div>

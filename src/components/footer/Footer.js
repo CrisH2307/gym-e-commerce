@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { secondaryStyle, textStyle } from "../headerSection/HeaderSection";
 import { Drawer } from "@mui/material";
 import SubmitForm from "../submitForm/submit";
+import Image from "next/image";
 
 export default function Footer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -100,7 +101,7 @@ export default function Footer() {
             </div>
             <button className="outline-none flex items-center -m-2 p-2 font-bold">
               <div className="inline-block w-7 h-7 mr-3 overflow-hidden">
-                <img className="w-full h-full" src="https://flagcdn.com/ca.svg" />
+                <Image src="https://flagcdn.com/ca.svg" alt="Canada Flag" width={100} height={100} />{" "}
               </div>
               <span className="hover:underline text-white">English</span>
             </button>

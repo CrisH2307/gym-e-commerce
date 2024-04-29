@@ -78,6 +78,7 @@ export default function EquipmentDetailbyID({ equipment }) {
                     <div className="container">
                       <Image
                         src={equipment.image}
+                        alt="Equipment Image"
                         className="w-full image"
                         style={{ transition: "0.2s" }}
                         onMouseOver={(e) => {
@@ -391,8 +392,8 @@ export default function EquipmentDetailbyID({ equipment }) {
             <p style={textStyle} className="text-2xl leading-9">
               For used products warranty time goes up to a maximum of 2 years, but never more than corresponding new
               product. For example, a used XF bar has a warranty of 2 years (12 years for a new XF bar). The SKAI
-              upholstery of a used flat bench has 6 months warranty, as it can't exceed the warranty time of 6 months
-              for a new SKAI upholstery.
+              upholstery of a used flat bench has 6 months warranty, as it can&apos;t exceed the warranty time of 6
+              months for a new SKAI upholstery.
             </p>
           </div>
         </div>
