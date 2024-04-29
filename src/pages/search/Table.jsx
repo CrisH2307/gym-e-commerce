@@ -3,6 +3,12 @@ import Link from "next/link";
 import "./search.css";
 
 const Table = ({ data }) => {
+  // Modfied by Cris
+  // -------------
+  if (!data || !Array.isArray(data)) {
+    return null;
+  }
+  // -------------
   return (
     <table>
       <tbody>
@@ -15,7 +21,7 @@ const Table = ({ data }) => {
             <td>
               <Link href={`/equipment/${item.id}`}>{item.name}</Link>
             </td>
-            <td>${item.new_price}</td>
+            <td>${item.new_price.toFixed(2)}</td>
           </tr>
         ))}
       </tbody>

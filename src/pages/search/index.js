@@ -5,12 +5,19 @@ import CancelIcon from "@mui/icons-material/Cancel";
 import Link from "next/link";
 import Table from "./Table";
 import data_product from "../../components/Assets/data";
+
 const Search = () => {
   //const [search, setSearchbar] = useState(false);
   const [query, setQuery] = useState("");
   const inputRef = useRef(null);
 
   const search = (data) => {
+    // Modified - By Cris
+    // ------------------
+    if (!query) {
+      return [];
+    }
+    // ------------------
     return data.filter((item) => item.name.toLowerCase().includes(query));
   };
 

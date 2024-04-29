@@ -23,7 +23,7 @@ export default function ItemGear(props) {
           <div className="item-prices flex flex-wrap mt-1 gap-x-2">
             <div className="item-prices-new">
               {"$"}
-              {props.item_price.toFixed(2)}
+              {props.item_price ? props.item_price.toFixed(2) : "0.00"}
             </div>
           </div>
         </div>
